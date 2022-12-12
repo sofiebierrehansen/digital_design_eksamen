@@ -10,7 +10,7 @@ module.exports = {
       "pink-500": "#EF589F",
       "pink-600": "#EC3A8E",
       "pink-700": "#E91F7F",
-      "pink-800": "D81572",
+      "pink-800": "#D81572",
       "green-100": "#ACFEF6",
       "green-200": "#10FBE4",
       "green-300": "#04EFD8",
@@ -41,13 +41,62 @@ module.exports = {
       "stone-700": "#8D8989",
       "stone-800": "#726F6F",
       "stone-900": "#353535",
+      "blue-500":"#419CDA",
+      "blue-600":"#1B79B9",
+      "grey-300":"#CCCCCC",
+
     },
     fontFamily: {
       luckiestguy: "'Luckiest Guy', cursive",
       montserrat: "'Montserrat', sans-serif",
+      praise: "'Praise', cursive"
     },
-    fontSize: { text5xl: "4rem" },
-    extend: {},
+    fontSize:{ 
+      display:"8rem",
+      text5xl: "4rem",
+      text4xl:"3.063rem",
+      text3xl:"2.438rem",
+      text2xl:"1.938rem",
+      textxl:"1.563rem",
+      textlg:"1.25rem",
+      textmd:"1.125rem",
+      textsm:"1rem",
+      textxs:"0.75rem"
+    },
+    borderRadius:{
+    lgprimarybtnradius:"15px",
+    mdprimarybtnradius:"10px",
+    mdsecondarybtnradius:"10px",
+    woltbtnradius: "15px",
+    scoopcardradius:"15px",
+    },
+    extend: {
+      padding:{
+        lgprimarybtnpy:"10px",
+        lgprimarybtnpx:"20px",
+        mdprimarybtnpy:"5px",
+        mdprimarybtnpx:"10px",
+        woltbtnpy:"5px",
+        woltbtnpx:"15px",
+        pleft:"8rem",
+        p4rem:"4rem"
+      },
+      margin:{
+        headertop:"122px",
+        mauto:"auto",
+        m150:"150px",
+      },
+      width:{
+        textwidth:"415px",
+        icewidth:"596px",
+        navwidth:"100%",
+        w270:"270px"
+      },
+      height:{
+        iceheight:"1203px",
+        h270:"270px",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

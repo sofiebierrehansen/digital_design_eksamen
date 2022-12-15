@@ -18,23 +18,146 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet"> 
 
-    <title>Nicecream Copenhagen</title>
+    <title>Book os</title>
   </head>
   <body>
     <header>
         <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg">
-          <ul class="md:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
+          <div class="dropdown flex p-2 lg:hidden">
+            <a  class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
+            <label tabindex="0" class="btn ">Click</label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-stone-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+          <ul class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
            <a  class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
-            <li class="self-center hover:text-green-500"><a href="vores-menu.html">Vores menu</a></li>
-            <li class="self-center hover:text-green-500"><a href="book-os.html">Book os</a></li>
-            <li class="self-center hover:text-green-500"><a href="koeb-gavekort.html">Køb gavekort</a></li>
-            <li class="self-center hover:text-green-500"><a href="om-os.html">Om os</a></li>
-            <li class="self-center hover:text-green-500"><a href="kontakt.html">Kontakt</a></li>
+            <li class="self-center hover:text-green-500 "><a href="vores-menu.html">Vores menu</a></li>
+            <li class="self-center hover:text-green-500 ring-yellow-500"><a href="book-os.html">Book os</a></li>
+            <li class="self-center hover:text-green-500 outline-yellow-500"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+            <li class="self-center hover:text-green-500 "><div class="dropdown dropdown-hover">
+              <label tabindex="0" class="text-[24px] flex">Om os <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100 menu p-2 shadow-md rounded-box w-64 text-[24px]">
+                <li><a href="om-nicecream.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Historien om Nicecream</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Spørgsmål & svar</a></li>
+              </ul>
+            </div></li>
+            <li class="self-center hover:text-green-500"><div class="dropdown dropdown-hover">
+              <label tabindex="0" class=" text-[24px] flex">Kontakt <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100  menu p-2 shadow-md rounded-box w-64 text-[24px]">
+                <li><a href="find-os.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Find os</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Bliv forhandler</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Få din egen Nicecream butik</a></li>
+              </ul>
+            </div></li>
             <a class="self-center" href="#"><svg class="fill-stone-900 hover:fill-green-500" width="32" height="32" viewBox="0 0 24 24"><path class="" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V8q0-.825.588-1.412Q5.175 6 6 6h2q0-1.65 1.175-2.825Q10.35 2 12 2q1.65 0 2.825 1.175Q16 4.35 16 6h2q.825 0 1.413.588Q20 7.175 20 8v12q0 .825-.587 1.413Q18.825 22 18 22Zm0-2h12V8h-2v2q0 .425-.287.712Q15.425 11 15 11t-.712-.288Q14 10.425 14 10V8h-4v2q0 .425-.287.712Q9.425 11 9 11t-.712-.288Q8 10.425 8 10V8H6v12Zm4-14h4q0-.825-.587-1.412Q12.825 4 12 4q-.825 0-1.412.588Q10 5.175 10 6ZM6 20V8v12Z"/></svg></a>
             <a class="bg-blue-500 text-stone-100 self-center font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a>
           </ul>
         </nav>
       </header>
+      <main>
+        <h1 class="font-luckiestguy text-text3xl md:text-text5xl mt-[63px] md:mt-headertop md:mx-auto text-stone-900  lg:w-[947px] text-center ">Når dit event skal være noget særligt</h1>
+        <section class="grid lg:grid-cols-2 gap-5 font-montserrat mt-[102px] m-m20 lg:ml-m150">
+          <div class="md:max-w-[628px] text-stone-900">
+            <p class="font-bold text-textmd max-w-[365px]">Server vores plantebaserede økologiske, cremede is til din event!</p>
+            <p class="mb-6">Book os til dit event uanset hvor stort eller småt det måtte være! Vi kan komme til dit hus, arbejdsplads, bryllup eller hvor end du ønsker at vi kommer. </p>
+         <p class="mb-6"> Vi serverer danmarks bedste plantebaserede is og søde sager lavet med de bedste ingredienser.</p>   
+            <p class="mb-6"> Vælg mellem scoops i vaffel og bæger, ispinde eller vores bøtter med is og ske, vores populære is-sandwich... listen fortsætter. Hvad end du ønsker af kombinationer og løsninger passer dit event bedst.</p> 
+            <p class="mb-6"> Vi tilbyder alt fra partyboxes til en campingvogn fyldt med is. Det er kun fantasien der sætter grænser.</p> 
+             <p class="mb-6"> Udfyld blot kontaktformularen til højre, send os en email eller ring til os. Vi vender tilbage til dig med et godt tilbud!</p>
+              <p>tlf: +45 71 99 90 74</p>
+             <p> e-mail: info@nicecreamcph.com</p>
+          </div>
+          <div class="m-auto">
+            <div class="form-control w-full max-w-xs -z-10">
+              <label class="label">
+                <span class="label-text mb-2">Navn*</span>
+              </label>
+              <input type="text" placeholder="Lars Larsen" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+              <label class="label">
+                <span class="label-text mb-2">Mobil*</span>
+              </label>
+              <input type="text" placeholder="12 34 56 78" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+              <label class="label">
+                <span class="label-text mb-2">Email*</span>
+              </label>
+              <input type="text" placeholder="lars.larsen@gmail.com" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+              <label class="label">
+                <span class="label-text mb-2">Firmanavn</span>
+              </label>
+              <input type="text" placeholder="Lars Aps" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+              <label class="label">
+                <span class="label-text mb-2">Antal gæster*</span>
+              </label>
+              <input type="text" placeholder="32" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+              <label class="label">
+                <span class="label-text mb-2">Hvor skal eventet afholdes*</span>
+              </label>
+              <input type="text" class="mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
+            </div>
+            <div class="form-control">
+              <p class="mb-2">Ønsker du personale?*</p>
+              <label class="cursor-pointer">
+                <input type="radio" name="radio-10" class=" checked:bg-pink-800" checked />
+                <span class="label-text">Ja tak</span>
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="cursor-pointer mb-6">
+                <input type="radio" name="radio-10" class="checked:bg-pink-800" checked />
+                <span class="label-text">Nej tak</span> 
+              </label>
+              <p class="mb-2">Ønsker du levering og afhentning?*</p>
+              <label class="cursor-pointer">
+                <input type="radio" name="radio-10" class=" checked:bg-pink-800" checked />
+                <span class="label-text">Ja tak</span>
+              </label>
+            </div>
+            <div class="form-control">
+              <label class="cursor-pointer mb-6">
+                <input type="radio" name="radio-10" class="checked:bg-pink-800" checked />
+                <span class="label-text">Nej tak</span> 
+              </label>
+            
+            <p class="mb-2">Information om dit event*</p>
+            <textarea class="textarea border-2 border-pink-800 rounded-mdprimarybtnradius bg-stone-100 xl:w-[455px]"></textarea>
+            <button class=" bg-pink-600 hover:bg-pink-800 drop-shadow-md w-[104px] px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold mt-8 -z-10">Indsend</button>
+          </div>
+          </div>
+        </section>
+        <section class="grid lg:grid-cols-2 mt-[119px] mx-m20">
+          <div>
+            <h2 class="font-luckiestguy lg:ml-m150 text-text4xl text-stone-900">Partyboxes</h2>
+            <p class="lg:ml-m150 font-montserrat mb-6">Skal du holde fest og vil du forkæle dine gæster?
+              Vi tilbyder partyboxes til 6-60 personers serveringer! </p>
+              <p class="lg:ml-m150 font-montserrat mb-6">
+                Vælg i mellem vores udvalg af Partyboxe med plantebaseret økologisk is, topping, cookies, vafler og tilbehør. Alt du skal bruge til den perfekte fest!</p>
+                <p class="lg:ml-m150 font-montserrat mb-6">Kom forbi vores butik på Enghaveplads eller ring til os for at bestille din partybox. Bestil 2 dage i forvejen!</p>
+                <p class="lg:ml-m150 font-montserrat">Afhent derefter din partybox i vores butik på Enghave Plads 10. </p>
+          </div>
+          <div class="grid grid-cols-2 gap-5 p-8 m-auto lg:mr-4">
+            <img src="images/desktop/partybox_1.webp" alt="Nicecream Partybox">
+            <img src="images/desktop/partybox_2.webp" alt="Nicecream Partybox">
+          </div>
+
+        </section>
+        <section class="grid md:grid-cols-2 gap-[102px] mt-[77px] mx-m20">
+          <div class="grid grid-cols-2 gap-5 lg:ml-m150 order-last md:order-first">
+            <img height="500" width="500" src="images/desktop/vogn_1.webp" alt="Nicecream vogn" class="aspect-square">
+            <img height="500" width="500" src="images/desktop/vogn_2.webp" alt="Nicecream vogn" class="aspect-square">
+            <img height="500" width="500" src="images/desktop/vogn_4.webp" alt="Nicecream vogn" class="aspect-square">
+            <img height="500" width="500" src="images/desktop/vogn_3.webp" alt="Nicecream vogn" class="aspect-square">
+          </div>
+          <div class="lg:w-[408px]">
+            <h2 class="font-luckiestguy text-text4xl text-stone-900">Vores vogne</h2>
+            <p class="font-montserrat mb-6">Vi har forskellige vogne/cykler til alle typer og størrelser af events, bryllupper, fester og andre festligheder. </p>
+            <p class="font-montserrat mb-6">Vi vil sørge for at servere danmarks bedste plantebaserede is og hvis du har brug for det, kan vi også medbringe personale til at servere. </p>
+            <p class="font-montserrat mb-6">
+              Kontakt os og vi finder den perfekte pakkeløsning der passer til lige præcis dit event!</p>
+          </div>
+        </section>
+      </main>
       <script type="module" src="./main.js"></script>
   </body>
 </html>

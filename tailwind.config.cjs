@@ -63,13 +63,6 @@ module.exports = {
       textsm:"1rem",
       textxs:"0.75rem"
     },
-    borderRadius:{
-    lgprimarybtnradius:"15px",
-    mdprimarybtnradius:"10px",
-    mdsecondarybtnradius:"10px",
-    woltbtnradius: "15px",
-    scoopcardradius:"15px",
-    },
     extend: {
       padding:{
         lgprimarybtnpy:"10px",
@@ -83,8 +76,10 @@ module.exports = {
       },
       margin:{
         headertop:"122px",
+        headertopmobile:"52px",
         mauto:"auto",
         m150:"150px",
+        m20:"20px"
       },
       width:{
         textwidth:"415px",
@@ -96,7 +91,24 @@ module.exports = {
         iceheight:"1203px",
         h270:"270px",
       },
+      borderRadius:{
+        lgprimarybtnradius:"15px",
+        mdprimarybtnradius:"10px",
+        mdsecondarybtnradius:"10px",
+        woltbtnradius: "15px",
+        scoopcardradius:"15px",
+        },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: false,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
 };

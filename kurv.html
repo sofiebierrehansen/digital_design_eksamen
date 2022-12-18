@@ -20,10 +20,9 @@
 
     <title>Kurv</title>
     <script type="module" crossorigin src="./assets/main.e714c211.js"></script>
-    <link rel="stylesheet" href="./assets/main.6de5f816.css">
+    <link rel="stylesheet" href="./assets/main.b0be9d17.css">
   </head>
   <body>
-<main x-data="{ step: 'step1', pris: '200', antal: '6'}" class="max-w-screen-2xl m-auto">
     <header>
         <!------Burger menu------->
         <nav class="md:w-navwidth md:fixed top-0 shadow-lg backdrop-blur-lg w-screen z-40 fixed">
@@ -81,18 +80,19 @@
             </ul>
           </nav>
         </header>
+  <main x-data="{ step: 'step1', pris: '200', antal: '6'}" class="max-w-screen-2xl m-auto">
   <section class="lg:m-8 lg:p-8 pt-0  mb-4">
     <!-- step 1 -->
   <div id="step1" x-show="step === 'step1'">
     <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-stone-900 text-center mb-24 md:mt-[120px]">Din kurv</h1>
     <form id="giftcard" class="grid">  
       <div class="grid lg:grid-cols-2 lg:gap-32 lg:pl-[150px]">
-        <img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort">
+        <img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort" class="px-4">
         <div>
-        <p class="font-montserrat text-stone-900 font-semibold text-textxl p-4">1x Gavekort værdi 200 Kr.</p>
-        <p class="text-stone-900 font-montserrat text-textsm p-4 w-[340px]">Gavekortet kan bruges i alle vores butikker. Husk at medbringe din bekræftelsesmail sammen med gavekortet. 
+        <p class="font-montserrat text-stone-900 font-semibold text-textxl p-8">1x Gavekort værdi 200 Kr.</p>
+        <p class="text-stone-900 font-montserrat text-textsm p-8 w-[340px]">Gavekortet kan bruges i alle vores butikker. Husk at medbringe din bekræftelsesmail sammen med gavekortet. 
             Gavekortet er ikke gyldigt uden bekræftelsesmailen!</p>
-            <div class="flex gap-5 pl-4 mt-12 lg:mt-28">
+            <div class="flex gap-5 pl-16 mt-12">
                 <button class="focus:outline-none border-[4px]   focus:outline-yellow-500 bg-stone-100 flex border-pink-800  hover:border-pink-500 hover:text-pink-500 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-pink-800 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat fill-pink-800 hover:fill-pink-500 tracking-[1rem]">- 1 +</button>
                 <button class="focus:outline-none border-[4px] focus:outline-yellow-500 bg-stone-100 flex border-pink-800 hover:border-pink-500 hover:text-pink-500 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-pink-800 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat fill-pink-800 hover:fill-pink-500 ">Fjern</button>
               </div>
@@ -100,7 +100,7 @@
       </div>
                 
     </form>
-    <div class="border-t-[3px] mt-8  border-green-800 m-4">
+    <div class="border-t-[3px] p-4 mt-8  border-green-800 m-4">
         <a class="font-montserrat text-stone-900 underline mt-8" href="#">Tilføj rabatkode</a>
     <div class="flex justify-between gap-5">
       <div>
@@ -118,10 +118,10 @@
      <!-- step 2-->
      <div id="step2" x-show="step === 'step2'">
         <section>
-            <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-center text-stone-900">Betaling</h1>
+            <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-stone-900 text-center md:mt-[120px]">Betaling</h1>
             <div class="grid xl:grid-cols-2">
-            <div class="ml-12 lg:ml-m150">
-              <h2 class="font-luckiestguy text-text2xl md:text-text3xl mt-12 lg:mt-[132px] mb-[29px] text-stone-900">Kort informationer</h2>
+            <div class="m-auto lg:ml-m150">
+              <h2 class="font-luckiestguy text-textxl md:text-text3xl mt-12 lg:mt-[132px] mb-[29px] text-stone-900">Kort informationer</h2>
               <form class="form-control w-full max-w-xs -z-10">
                 <label for="kortnummer" class="label label-text mb-2 font-montserrat">Kortnummer*
                 </label>
@@ -142,7 +142,7 @@
                     Kort indehaver*
                   </label>
                   <input id="kort-indehaver" name="kort-indehaver" type="text" placeholder="Lars Larsen" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
-                <h2 class="font-luckiestguy text-text2xl md:text-text3xl text-stone-900">Faktueringsadresse</h2>
+                <h2 class="font-luckiestguy text-textxl md:text-text3xl text-stone-900">Faktueringsadresse</h2>
                 <label for="email" class="label label-text mb-2 font-montserrat">
                   Email til bekræftelse af ordre*
                 </label>
@@ -218,18 +218,16 @@
       <!-- step 3 -->
   <div id="step3" x-show="step === 'step3'">
     <section class="grid lg:place-content-center m-auto">
-    <h1 class="font-luckiestguy text-stone-900 text-center pt-[113px] md:pt-0 text-text3xl md:text-text5xl">Betaling gennemført</h1>                    
-    <p class="font-montserrat text-textsm font-bold md:font-semibold md:text-textxl ml-5 lg:ml-20 my-8 lg:w-[557px]">Betalingen er gennemført og gavekortet bliver sendt til den e-mail du har angivet. </p>
-<img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort"> 
+    <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-stone-900 text-center md:mt-[120px]">Betaling gennemført</h1>                    
+    <p class="font-montserrat text-textsm font-bold md:font-semibold md:text-textxl ml-5 lg:ml-20 my-8 lg:w-[557px] leading-7">Betalingen er gennemført og gavekortet bliver sendt til den e-mail du har angivet. </p>
+<img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort" class="p-8"> 
 </section>
 </div>
 
-  <footer class="p-6 flex justify-end m-auto">
-    <div class="grid">
-      <button id="knap2" class="font-montserrat focus:outline-none mr-16  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold " x-on:click="step = 'step2'" x-show="step === 'step1'">Til kassen</button>
-      <button id="knap3" class="font-montserrat focus:outline-none mr-24  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold mt-12 lg:mt-8" x-on:click="step = 'step3'" x-show="step === 'step2'">Gennemfør betaling</button>
-    </div>
-  </footer>
+  <div class="p-6 flex justify-center">
+      <button id="knap2" class="font-montserrat focus:outline-none  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold " x-on:click="step = 'step2'" x-show="step === 'step1'">Til kassen</button>
+      <button id="knap3" class="font-montserrat focus:outline-none  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold mt-12 lg:mt-8" x-on:click="step = 'step3'" x-show="step === 'step2'">Gennemfør betaling</button>
+  </div>
   <footer class="bg-pink-100 font-montserrat mt-m150 m-auto p-16">
     <div class="md:grid md:grid-cols-3 gap-5 m-auto">
     <ul class="mt-[2rem] md:mt-[0] leading-7 m-auto">

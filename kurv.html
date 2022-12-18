@@ -20,40 +20,41 @@
 
     <title>Kurv</title>
     <script type="module" crossorigin src="./assets/main.8fa807a3.js"></script>
-    <link rel="stylesheet" href="./assets/main.2c16db96.css">
+    <link rel="stylesheet" href="./assets/main.60419f5c.css">
   </head>
   <body>
 <main x-data="{ step: 'step1', pris: '200', antal: '6'}" class="max-w-screen-2xl m-auto">
     <header>
         <!------Burger menu------->
-          <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg z-10">
-            <div class="flex lg:hidden shadow-lg">
-              <a class="mr-mauto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
-             <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
+        <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg w-screen z-40 fixed">
+          <div class="flex lg:hidden shadow-lg">
+            <a class="mr-mauto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
+           <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
+          </div>
+          <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden bg-[url('images/sprinkels.svg')] bg-no-repeat">
+            <li class="text-right mt-8"><a href="vores-menu.html">Vores menu</a></li>
+            <li class="text-right"><a href="book-os.html">Book os</a></li>
+            <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+              <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+                <li><a href="om-nicecream.html">Nicecreams historie</a></li>
+                <li><a>Spørgsmål og svar</a></li>
+              </ul>
             </div>
-            <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden">
-              <li class="text-right mt-8"><a href="vores-menu.html">Vores menu</a></li>
-              <li class="text-right"><a href="book-os.html">Book os</a></li>
-              <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
-              <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
-                <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-                <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
-                  <li><a href="om-nicecream.html">Nicecreams historie</a></li>
-                  <li><a>Spørgsmål og svar</a></li>
-                </ul>
-              </div>
-              </li>
-              <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
-                <label class="flex" tabindex="0" >Kontakt <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-                <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
-                  <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
-                  <li><a>Få din egen Nicecream butik</a></li>
-                </ul>
-              </div>
             </li>
-              <li class="text-right"><a href="#">Kurv</a></li>
-              <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
-            </ul>
+            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+              <label class="flex" tabindex="0" >Kontakt <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+                <li><a class="p-0" href="find-os.html">Find os</a></li>
+                <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
+                <li><a>Få din egen Nicecream butik</a></li>
+              </ul>
+            </div>
+          </li>
+            <li class="text-right"><a href="#">Kurv</a></li>
+            <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
+          </ul>
             <!-----desktop menu-->
             <ul id="topnav2" class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
              <a  class="mr-mauto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
@@ -83,7 +84,7 @@
   <section class="lg:m-8 lg:p-8 pt-0  mb-4">
     <!-- step 1 -->
   <div id="step1" x-show="step === 'step1'">
-    <h1 class="font-luckiestguy text-text3xl md:text-text5xl text-stone-900 text-center mb-24 md:mt-[247px]">Din kurv</h1>
+    <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-stone-900 text-center mb-24 md:mt-[247px]">Din kurv</h1>
     <form id="giftcard" class="grid">  
       <div class="grid lg:grid-cols-2 lg:gap-32 lg:pl-[150px]">
         <img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort">
@@ -117,66 +118,66 @@
      <!-- step 2-->
      <div id="step2" x-show="step === 'step2'">
         <section>
-            <h1 class="font-luckiestguy text-text3xl md:text-text5xl text-center text-stone-900">Betaling</h1>
+            <h1 class="font-luckiestguy text-text3xl pt-[113px] md:pt-0 md:text-text5xl text-center text-stone-900">Betaling</h1>
             <div class="grid xl:grid-cols-2">
             <div class="ml-12 lg:ml-m150">
               <h2 class="font-luckiestguy text-text2xl md:text-text3xl mt-12 lg:mt-[132px] mb-[29px] text-stone-900">Kort informationer</h2>
               <div class="form-control w-full max-w-xs -z-10">
                 <label class="label">
-                  <span class="label-text mb-2">Kortunmmer*</span>
+                  <span class="label-text mb-2 font-montserrat">Kortnummer*</span>
                 </label>
                 <input type="text" placeholder="Indtast kortinformation" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                <div class="lg:flex gap-4">
                 <div>
                 <label class="label">
-                  <span class="label-text mb-2">Udløbsdato*</span>
+                  <span class="label-text mb-2 font-montserrat">Udløbsdato*</span>
                 </label>
                 <input type="text" placeholder="MM / ÅÅ " class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius w-[320px]  xl:w-[214px]" />
             </div>
             <div>
                 <label class="label">
-                  <span class="label-text mb-2">Sikkerhedskode*</span>
+                  <span class="label-text mb-2 font-montserrat">Sikkerhedskode*</span>
                 </label>
                 <input type="text" placeholder="XXX" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius w-[320px]  xl:w-[214px]" />
             </div>
             </div>
                 <label class="label">
-                    <span class="label-text mb-2">Kort indehaver</span>
+                    <span class="label-text mb-2 font-montserrat">Kort indehaver</span>
                   </label>
                   <input type="text" placeholder="Lars Larsen" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                 <h2 class="font-luckiestguy text-text2xl md:text-text3xl text-stone-900">Faktueringsadresse</h2>
                 <label class="label">
-                  <span class="label-text mb-2">Email til bekræftelse af ordre*</span>
+                  <span class="label-text mb-2 font-montserrat">Email til bekræftelse af ordre*</span>
                 </label>
                 <input type="text" placeholder="lars.larsen@gmail.com" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                 <label class="label">
-                  <span class="label-text mb-2">Fornavn*</span>
+                  <span class="label-text mb-2 font-montserrat">Fornavn*</span>
                 </label>
                 <input type="text" placeholder="Lars" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                 <label class="label">
-                    <span class="label-text mb-2">Efternavn*</span>
+                    <span class="label-text mb-2 font-montserrat">Efternavn*</span>
                   </label>
                   <input type="text" placeholder="Larsen" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                   <label class="label">
-                    <span class="label-text mb-2">Adresse*</span>
+                    <span class="label-text mb-2 font-montserrat">Adresse*</span>
                   </label>
                   <input type="text" placeholder="Rådhuspladsen 1, st. tv" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                   <div class="lg:flex gap-4">
                     <div>
                     <label class="label">
-                      <span class="label-text mb-2">Postnr*</span>
+                      <span class="label-text mb-2 font-montserrat">Postnr*</span>
                     </label>
                     <input type="text" placeholder="1050 " class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius w-[320px]  xl:w-[214px]" />
                 </div>
                 <div>
                     <label class="label">
-                      <span class="label-text mb-2">By*</span>
+                      <span class="label-text mb-2 font-montserrat">By*</span>
                     </label>
                     <input type="text" placeholder="København K" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius w-[320px]  xl:w-[214px]" />
                 </div>
                 </div>
                   <label class="label">
-                    <span class="label-text mb-2">Telefon*</span>
+                    <span class="label-text mb-2 font-montserrat">Telefon*</span>
                   </label>
                   <input type="text" placeholder="+45 10 20 30 40" class="focus:border-pink-800 mb-6 input border-2 border-pink-800 bg-stone-100 input-bordered rounded-mdprimarybtnradius  xl:w-[455px]" />
                   <div class="flex gap-5">
@@ -220,16 +221,16 @@
       <!-- step 3 -->
   <div id="step3" x-show="step === 'step3'">
     <section class="grid lg:place-content-center m-auto">
-    <h1 class="font-luckiestguy text-stone-900 text-center text-text3xl md:text-text5xl">Betaling gennemført</h1>                    
-    <p class="font-montserrat text-textsm font-bold md:font-semibold md:text-textxl lg:ml-20 my-8 lg:w-[557px]">Betalingen er gennemført og gavekortet bliver sendt til den e-mail du har angivet. </p>
+    <h1 class="font-luckiestguy text-stone-900 text-center pt-[113px] md:pt-0 text-text3xl md:text-text5xl">Betaling gennemført</h1>                    
+    <p class="font-montserrat text-textsm font-bold md:font-semibold md:text-textxl ml-5 lg:ml-20 my-8 lg:w-[557px]">Betalingen er gennemført og gavekortet bliver sendt til den e-mail du har angivet. </p>
 <img src="./assets/gavekort.991d31da.webp" alt="Nicecream gavekort"> 
 </section>
 </div>
 
   <footer class="p-6 flex justify-end m-auto">
     <div class="grid">
-      <button id="knap2" class="focus:outline-none mr-16  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold " x-on:click="step = 'step2'" x-show="step === 'step1'">Til kassen</button>
-      <button id="knap3" class="focus:outline-none mr-24  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold mt-12 lg:mt-8" x-on:click="step = 'step3'" x-show="step === 'step2'">Gennemfør betaling</button>
+      <button id="knap2" class="font-montserrat focus:outline-none mr-16  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md  px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold " x-on:click="step = 'step2'" x-show="step === 'step1'">Til kassen</button>
+      <button id="knap3" class="font-montserrat focus:outline-none mr-24  focus:outline-yellow-500  bg-pink-600 hover:bg-pink-800 drop-shadow-md px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold mt-12 lg:mt-8" x-on:click="step = 'step3'" x-show="step === 'step2'">Gennemfør betaling</button>
     </div>
   </footer>
   <footer class="bg-pink-100 font-montserrat mt-m150 m-auto p-16">

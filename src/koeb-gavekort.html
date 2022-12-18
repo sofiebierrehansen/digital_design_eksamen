@@ -21,22 +21,67 @@
     <title>Køb gavekort</title>
   </head>
   <body>
+    <a class="absolute top-32 font-montserrat focus:outline-none  focus:outline-green-800 -left-full transition-transform focus:left-8 " href="#main">
+      Skip to content
+    </a>
     <header>
+      <!------Burger menu------->
         <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg z-10">
-          <ul class="md:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
+          <div class="flex lg:hidden shadow-lg">
+            <a class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
+           <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
+          </div>
+          <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden">
+            <li class="text-right mt-8"><a href="vores-menu.html">Vores menu</a></li>
+            <li class="text-right"><a href="book-os.html">Book os</a></li>
+            <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+              <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+                <li><a href="om-nicecream.html">Nicecreams historie</a></li>
+                <li><a>Spørgsmål og svar</a></li>
+              </ul>
+            </div>
+            </li>
+            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+              <label class="flex" tabindex="0" >Kontakt <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+                <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
+                <li><a>Få din egen Nicecream butik</a></li>
+              </ul>
+            </div>
+          </li>
+            <li class="text-right"><a href="#">Kurv</a></li>
+            <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
+          </ul>
+          <!-----desktop menu-->
+          <ul id="topnav2" class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
            <a  class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
-            <li class="self-center hover:text-green-500"><a href="vores-menu.html">Vores menu</a></li>
-            <li class="self-center hover:text-green-500"><a href="book-os.html">Book os</a></li>
-            <li class="self-center hover:text-green-500"><a href="koeb-gavekort.html">Køb gavekort</a></li>
-            <li class="self-center hover:text-green-500"><a href="om-nicecream.html">Om os</a></li>
-            <li class="self-center hover:text-green-500"><a href="#">Kontakt</a></li>
-            <a class="self-center" href="#"><svg class="fill-stone-900 hover:fill-green-500" width="32" height="32" viewBox="0 0 24 24"><path class="" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V8q0-.825.588-1.412Q5.175 6 6 6h2q0-1.65 1.175-2.825Q10.35 2 12 2q1.65 0 2.825 1.175Q16 4.35 16 6h2q.825 0 1.413.588Q20 7.175 20 8v12q0 .825-.587 1.413Q18.825 22 18 22Zm0-2h12V8h-2v2q0 .425-.287.712Q15.425 11 15 11t-.712-.288Q14 10.425 14 10V8h-4v2q0 .425-.287.712Q9.425 11 9 11t-.712-.288Q8 10.425 8 10V8H6v12Zm4-14h4q0-.825-.587-1.412Q12.825 4 12 4q-.825 0-1.412.588Q10 5.175 10 6ZM6 20V8v12Z"/></svg></a>
+            <li class="self-center hover:text-green-800 "><a href="vores-menu.html">Vores menu</a></li>
+            <li class="self-center hover:text-green-800 ring-yellow-500"><a href="book-os.html">Book os</a></li>
+            <li class="self-center hover:text-green-800 outline-yellow-500"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+            <li class="self-center hover:text-green-800 "><div class="dropdown dropdown-hover">
+              <label tabindex="0" class="text-[24px] flex">Om os <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100 menu p-2 shadow-md rounded-box w-64 text-[24px]">
+                <li><a href="om-nicecream.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Nicecreams historie</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Spørgsmål & svar</a></li>
+              </ul>
+            </div></li>
+            <li class="self-center hover:text-green-800"><div class="dropdown dropdown-hover">
+              <label tabindex="0" class=" text-[24px] flex">Kontakt <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100  menu p-2 shadow-md rounded-box w-64 text-[24px]">
+                <li><a href="find-os.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Find os</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Bliv forhandler</a></li>
+                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Få din egen Nicecream butik</a></li>
+              </ul>
+            </div></li>
+            <a class="self-center" href="#"><svg class="fill-stone-900 hover:fill-green-800" width="32" height="32" viewBox="0 0 24 24"><path class="" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V8q0-.825.588-1.412Q5.175 6 6 6h2q0-1.65 1.175-2.825Q10.35 2 12 2q1.65 0 2.825 1.175Q16 4.35 16 6h2q.825 0 1.413.588Q20 7.175 20 8v12q0 .825-.587 1.413Q18.825 22 18 22Zm0-2h12V8h-2v2q0 .425-.287.712Q15.425 11 15 11t-.712-.288Q14 10.425 14 10V8h-4v2q0 .425-.287.712Q9.425 11 9 11t-.712-.288Q8 10.425 8 10V8H6v12Zm4-14h4q0-.825-.587-1.412Q12.825 4 12 4q-.825 0-1.412.588Q10 5.175 10 6ZM6 20V8v12Z"/></svg></a>
             <a class="bg-blue-500 text-stone-100 self-center font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a>
           </ul>
         </nav>
       </header>
-      <main>
-        <h1 class="font-luckiestguy text-text3xl md:text-text5xl mt-[63px] md:mt-headertop md:mx-auto text-stone-900  lg:w-[947px] text-center ">Køb et gavekort til Nicecream</h1>
+      <main id="main" class="max-w-screen-2xl m-auto">
+        <h1 class="font-luckiestguy text-text3xl md:text-text5xl mt-[63px] md:mt-headertop md:mx-auto text-stone-900  lg:w-[947px] text-center  md:leading-[70px]">Køb et gavekort til Nicecream</h1>
         <section class="grid lg:grid-cols-2 gap-20 mt-12">
           <img src="images/desktop/gavekort.webp" alt="Nicecream gavekort" class="mx-auto lg:ml-m150">
           <div class="p-4">
@@ -44,7 +89,7 @@
               <label class="label">
                 <span class="label-text mb-2">Vælg det ønskede beløb herunder*</span>
               </label>
-              <select class="select font-montserrat font-normal mb-16 border-2 border-pink-800 bg-stone-100 rounded-mdprimarybtnradius xl:w-[337px]">
+              <select class="select font-montserrat font-normal mb-16 border-2 focus:border-pink-800 border-pink-800 bg-stone-100 rounded-mdprimarybtnradius xl:w-[337px]">
                 <option disabled selected>Vælg et beløb</option>
                 <option>75 kr.</option>
                 <option>100 kr.</option>
@@ -59,7 +104,7 @@
               <label class="label">
                 <span class="label-text mb-2">Vælg det ønskede antal herunder*</span>
               </label>
-              <select class="font-montserrat font-normal select mb-6 border-2 border-pink-800 bg-stone-100 rounded-mdprimarybtnradius  xl:w-[337px]">
+              <select class="font-montserrat font-normal select mb-6 border-2 focus:border-pink-800 border-pink-800 bg-stone-100 rounded-mdprimarybtnradius  xl:w-[337px]">
                 <option disabled selected>Vælg et antal</option>
                 <option>1</option>
                 <option>2</option>
@@ -69,8 +114,8 @@
                 <option>6</option>
               </select>
               <div class="flex gap-5 mt-12 lg:mt-40">
-                <button class="bg-pink-600 hover:bg-pink-800 drop-shadow-md w-[130px] px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat">Køb nu</button>
-                <button class="bg-stone-100 border-pink-800 border-2 hover:border-pink-500 hover:text-pink-500 drop-shadow-md w-[183px] px-mdprimarybtnpx py-mdprimarybtnpy text-pink-800 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat ">Tilføj til kurv</button>
+                <a class="focus:outline-none  focus:outline-yellow-500 bg-pink-600 flex hover:bg-pink-800 drop-shadow-md w-[128px] px-mdprimarybtnpx py-mdprimarybtnpy text-stone-100 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat" href="kurv.html">Køb nu <svg class="fill-stone-100 m-auto" width="16" height="20" viewBox="0 0 24 24"><path fill="" d="m12.05 23l-4.7-9q-1.775.075-3.063-1.025Q3 11.875 3 10q0-1.275.738-2.3q.737-1.025 1.862-1.45q.45-2.275 2.238-3.763Q9.625 1 12 1t4.163 1.487Q17.95 3.975 18.4 6.25q1.125.425 1.863 1.45Q21 8.725 21 10q0 1.875-1.325 2.975T16.7 14ZM7 12q.375 0 .737-.125q.363-.125.663-.425l.55-.55l.65.4q.525.35 1.138.525Q11.35 12 12 12t1.262-.175q.613-.175 1.138-.525l.65-.4l.55.55q.3.3.662.425q.363.125.738.125q.825 0 1.413-.588Q19 10.825 19 10q0-.75-.475-1.312Q18.05 8.125 17.3 8l-.75-.1l-.05-.8q-.125-1.725-1.425-2.912Q13.775 3 12 3q-1.775 0-3.075 1.188Q7.625 5.375 7.5 7.1l-.05.8l-.75.15q-.75.15-1.225.675Q5 9.25 5 10q0 .825.588 1.412Q6.175 12 7 12Zm5.05 6.65l2.7-5.25q-.6.3-1.3.45q-.7.15-1.45.15q-.675 0-1.362-.15q-.688-.15-1.338-.45ZM12 7.5Z"/></svg></a>
+                <button class="focus:outline-none  focus:outline-yellow-500 bg-stone-100 flex border-pink-800 border-2 hover:border-pink-500 hover:text-pink-500 drop-shadow-md w-[190px] px-mdprimarybtnpx py-mdprimarybtnpy text-pink-800 rounded-mdprimarybtnradius text-textlg font-semibold font-montserrat fill-pink-800 hover:fill-pink-500">Tilføj til kurv <svg class="m-auto" width="16" height="20" viewBox="0 0 24 24"><path fill="" d="m12.05 23l-4.7-9q-1.775.075-3.063-1.025Q3 11.875 3 10q0-1.275.738-2.3q.737-1.025 1.862-1.45q.45-2.275 2.238-3.763Q9.625 1 12 1t4.163 1.487Q17.95 3.975 18.4 6.25q1.125.425 1.863 1.45Q21 8.725 21 10q0 1.875-1.325 2.975T16.7 14ZM7 12q.375 0 .737-.125q.363-.125.663-.425l.55-.55l.65.4q.525.35 1.138.525Q11.35 12 12 12t1.262-.175q.613-.175 1.138-.525l.65-.4l.55.55q.3.3.662.425q.363.125.738.125q.825 0 1.413-.588Q19 10.825 19 10q0-.75-.475-1.312Q18.05 8.125 17.3 8l-.75-.1l-.05-.8q-.125-1.725-1.425-2.912Q13.775 3 12 3q-1.775 0-3.075 1.188Q7.625 5.375 7.5 7.1l-.05.8l-.75.15q-.75.15-1.225.675Q5 9.25 5 10q0 .825.588 1.412Q6.175 12 7 12Zm5.05 6.65l2.7-5.25q-.6.3-1.3.45q-.7.15-1.45.15q-.675 0-1.362-.15q-.688-.15-1.338-.45ZM12 7.5Z"/></svg></button>
               </div>
             </div>
           </div>
@@ -105,6 +150,54 @@
           <img src="images/desktop/cookiesandwich-nicecream.webp" alt="Cookie sandwich" class= "p-4">
         </section>
       </main>
+      <footer class="bg-pink-100 font-montserrat mt-m150 m-auto p-16">
+        <div class="md:grid md:grid-cols-3 gap-5 m-auto">
+        <ul class="mt-[2rem] md:mt-[0] leading-7 m-auto">
+          <li class="font-bold">Nicecream
+          </li>
+          <li><a class="underline hover:text-green-800" href="#">Vores butikker</a></li>
+          <li><a class="underline hover:text-green-800" href="#">Spørgsmål & svar </a></li>
+          <li><a class="underline hover:text-green-800" href="#">Ingredienser</a></li>
+          <li><a class="underline hover:text-green-800" href="#">Bliv forhandler</a></li>
+          <li><a class="underline hover:text-green-800" href="#">Bliv en del af teamet</a></li>
+        </ul>
+        <ul class="mt-[2rem] md:mt-[0] leading-7 m-auto ">
+          <li class="font-bold">Kundeservice</li>
+          <li><a class="underline hover:text-green-800" href="#">Cookiepolitik</a></li>
+          <li><a class="underline hover:text-green-800" href="#">Handelsbetingelser</a></li>
+          <li><a class="underline hover:text-green-800" href="#">Privatlivspolitik</a></li>
+          <li><a class="underline hover:text-green-800" href="sitemap.html">Sitemap</a></li>
+        </ul>
+        <ul class="mt-[2rem] md:mt-[0] leading-7 m-auto">
+          <li class="font-bold">Kontakt</li>
+          <li><a class="underline hover:text-green-800" href="#">tlf:+45 71 99 90 74</a></li>
+          <li><a class="underline hover:text-green-800" href="#">e-mail: info@nicecreamcph.com</a></li>
+        </ul>
+      </div>
+      <ul class="grid lg:grid-cols-3 gap-24">
+      <li class="grid m-auto lg:ml-m150 mt-[70px] order-1">
+        <div class="flex">
+        <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
+        <svg width="54" height="54" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592c.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" fill="#000000"/></svg>
+        <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M6.781 12.894v.016c0 .266-.11.505-.286.677a.928.928 0 0 1-.672.286h-.011h.001h-.002a.978.978 0 0 1-.978-.978v-.012c0-.264.11-.502.286-.672a.942.942 0 0 1 .677-.287h.017h-.001a.979.979 0 0 1 .969.968v.001zm12.019-.013a.979.979 0 1 1-1.958 0v-.017c0-.263.11-.501.286-.67a.99.99 0 0 1 1.386.001a.924.924 0 0 1 .287.671v.017v-.001zm-10.832.01a2.009 2.009 0 1 0-4.017.001a2.009 2.009 0 0 0 4.017 0zm12.009-.01a2.009 2.009 0 1 0-.589 1.422c.363-.353.589-.846.589-1.391v-.032v.002zm-11.125.01a2.901 2.901 0 0 1-5.802 0v-.041c0-.788.328-1.499.854-2.005l.001-.001A2.8 2.8 0 0 1 5.912 10h.048h-.002h.041A2.78 2.78 0 0 1 8 10.846l.001.001c.524.508.85 1.218.85 2.005v.044v-.002zm12.02-.01v.004a2.901 2.901 0 1 1-.849-2.051c.524.508.849 1.218.849 2.004v.045zm-10.041.031l.001-.07a4.625 4.625 0 0 0-1.41-3.33l-.001-.001A4.623 4.623 0 0 0 6.09 8.099l-.074.001h.004h-.032c-.875 0-1.694.24-2.394.658l.021-.012c-1.443.85-2.397 2.397-2.397 4.166s.953 3.316 2.374 4.154l.022.012a4.63 4.63 0 0 0 2.373.646h.036h-.002l.07.001a4.625 4.625 0 0 0 3.33-1.41l.001-.001a4.623 4.623 0 0 0 1.412-3.331l-.001-.073v.004zm6.96-5.969c-1.66-.729-3.594-1.154-5.628-1.154l-.172.001H12a14.836 14.836 0 0 0-6.065 1.182l.097-.037h.017c.832 0 1.624.175 2.34.489l-.037-.015c.739.315 1.37.746 1.901 1.276a6.073 6.073 0 0 1 1.255 1.867l.015.039c.3.679.474 1.471.474 2.303v.018v-.001c0-1.619.641-3.088 1.682-4.168l-.002.002a6.107 6.107 0 0 1 1.811-1.264l.038-.016a5.652 5.652 0 0 1 2.252-.521h.007zm4.99 5.968a4.807 4.807 0 1 0-1.405 3.402a4.626 4.626 0 0 0 1.406-3.327l-.001-.079zm-2.77-5.895H24a5.528 5.528 0 0 0-.766 1.16l-.014.032a4.47 4.47 0 0 0-.412 1.163l-.005.03a5.923 5.923 0 0 1 1.144 3.515a5.97 5.97 0 0 1-10.594 3.776l-.008-.011c-.436.541-.879 1.15-1.291 1.781l-.054.087a8.695 8.695 0 0 0-.576-.882l.016.023q-.442-.63-.776-1.015a5.97 5.97 0 0 1-9.452-7.288l-.012.018a4.57 4.57 0 0 0-.429-1.218l.012.025a5.54 5.54 0 0 0-.789-1.2L0 7.019h3.802a12.375 12.375 0 0 1 3.61-1.611l.088-.02a16.569 16.569 0 0 1 4.425-.588h.079H12h.107c1.523 0 2.995.213 4.39.611l-.113-.027c1.378.383 2.584.942 3.672 1.665l-.047-.029z"/></svg>
+        <svg width="54" height="54" viewBox="0 0 24 24"><path d="M10.59 2c.64 0 .91.27.99.97l.21 3.17l.24 4.15c.02.35-.03.71-.17 1.03c-.22.45-.72.57-1.13.26c-.23-.19-.42-.44-.58-.71L6.42 4.55c-.36-.61-.25-1.01.35-1.39C7.5 2.68 9.73 2 10.59 2m4.24 12.85l.26.06l3.86 1.4c.66.24.84.61.55 1.26c-.44 1.13-1.16 2.09-2.08 2.88c-.46.4-.92.33-1.21-.17l-2.27-3.96c-.39-.71.09-1.52.89-1.47M4.5 14c0-.74 0-1.45.25-2.13c.22-.67.58-.87 1.25-.6l3.63 1.54c.46.19.72.51.7 1.03c-.03.52-.36.74-.8.89l-3.68 1.21c-.7.23-1.06.02-1.21-.69c-.09-.42-.17-.85-.14-1.25m7.47 7c-.02.81-.37 1.12-1.16 1c-1.04-.2-2-.6-2.85-1.24c-.42-.32-.51-.81-.2-1.23l2.71-3.56c.23-.3.56-.37.92-.23c.38.14.58.44.58.85V21m2.48-7.68c-.72.01-1.22-.82-.81-1.41c.83-1.24 1.71-2.45 2.59-3.65c.27-.41.71-.44 1.08-.1c.93.84 1.6 1.84 1.98 3.06c.14.45-.04.86-.46.98l-3.74.97l-.64.15z" fill="#000000"/></svg>
+        <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7L4 8v10h16V8Zm0-2l8-5H4ZM4 8V6v12Z"/></svg>
+      </div>
+        <div class="flex gap-5 mt-[20px]">
+        <svg width="98.7" height="32" viewBox="0 0 256 83"><defs><linearGradient id="svgIDa" x1="45.974%" x2="54.877%" y1="-2.006%" y2="100%"><stop offset="0%" stop-color="#222357"/><stop offset="100%" stop-color="#254AA5"/></linearGradient></defs><path fill="url(#svgIDa)" d="M132.397 56.24c-.146-11.516 10.263-17.942 18.104-21.763c8.056-3.92 10.762-6.434 10.73-9.94c-.06-5.365-6.426-7.733-12.383-7.825c-10.393-.161-16.436 2.806-21.24 5.05l-3.744-17.519c4.82-2.221 13.745-4.158 23-4.243c21.725 0 35.938 10.724 36.015 27.351c.085 21.102-29.188 22.27-28.988 31.702c.069 2.86 2.798 5.912 8.778 6.688c2.96.392 11.131.692 20.395-3.574l3.636 16.95c-4.982 1.814-11.385 3.551-19.357 3.551c-20.448 0-34.83-10.87-34.946-26.428m89.241 24.968c-3.967 0-7.31-2.314-8.802-5.865L181.803 1.245h21.709l4.32 11.939h26.528l2.506-11.939H256l-16.697 79.963h-17.665m3.037-21.601l6.265-30.027h-17.158l10.893 30.027m-118.599 21.6L88.964 1.246h20.687l17.104 79.963h-20.679m-30.603 0L53.941 26.782l-8.71 46.277c-1.022 5.166-5.058 8.149-9.54 8.149H.493L0 78.886c7.226-1.568 15.436-4.097 20.41-6.803c3.044-1.653 3.912-3.098 4.912-7.026L41.819 1.245H63.68l33.516 79.963H75.473" transform="matrix(1 0 0 -1 0 82.668)"/></svg>
+        <svg width="41.17" height="32" viewBox="0 0 256 199"><path d="M46.54 198.011V184.84c0-5.05-3.074-8.342-8.343-8.342c-2.634 0-5.488.878-7.464 3.732c-1.536-2.415-3.731-3.732-7.024-3.732c-2.196 0-4.39.658-6.147 3.073v-2.634h-4.61v21.074h4.61v-11.635c0-3.731 1.976-5.488 5.05-5.488c3.072 0 4.61 1.976 4.61 5.488v11.635h4.61v-11.635c0-3.731 2.194-5.488 5.048-5.488c3.074 0 4.61 1.976 4.61 5.488v11.635h5.05Zm68.271-21.074h-7.463v-6.366h-4.61v6.366h-4.171v4.17h4.17v9.66c0 4.83 1.976 7.683 7.245 7.683c1.976 0 4.17-.658 5.708-1.536l-1.318-3.952c-1.317.878-2.853 1.098-3.951 1.098c-2.195 0-3.073-1.317-3.073-3.513v-9.44h7.463v-4.17Zm39.076-.44c-2.634 0-4.39 1.318-5.488 3.074v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.536-5.488 4.39-5.488c.878 0 1.976.22 2.854.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22Zm-59.052 2.196c-2.196-1.537-5.269-2.195-8.562-2.195c-5.268 0-8.78 2.634-8.78 6.805c0 3.513 2.634 5.488 7.244 6.147l2.195.22c2.415.438 3.732 1.097 3.732 2.195c0 1.536-1.756 2.634-4.83 2.634c-3.073 0-5.488-1.098-7.025-2.195l-2.195 3.512c2.415 1.756 5.708 2.634 9 2.634c6.147 0 9.66-2.853 9.66-6.805c0-3.732-2.854-5.708-7.245-6.366l-2.195-.22c-1.976-.22-3.512-.658-3.512-1.975c0-1.537 1.536-2.415 3.951-2.415c2.635 0 5.269 1.097 6.586 1.756l1.976-3.732Zm122.495-2.195c-2.635 0-4.391 1.317-5.489 3.073v-2.634h-4.61v21.074h4.61v-11.854c0-3.512 1.537-5.488 4.39-5.488c.879 0 1.977.22 2.855.439l1.317-4.39c-.878-.22-2.195-.22-3.073-.22Zm-58.833 10.976c0 6.366 4.39 10.976 11.196 10.976c3.073 0 5.268-.658 7.463-2.414l-2.195-3.732c-1.756 1.317-3.512 1.975-5.488 1.975c-3.732 0-6.366-2.634-6.366-6.805c0-3.951 2.634-6.586 6.366-6.805c1.976 0 3.732.658 5.488 1.976l2.195-3.732c-2.195-1.757-4.39-2.415-7.463-2.415c-6.806 0-11.196 4.61-11.196 10.976Zm42.588 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.073 0 5.269-1.097 6.586-3.073v2.634h4.61v-10.537Zm-16.904 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805Zm-55.1-10.976c-6.147 0-10.538 4.39-10.538 10.976c0 6.586 4.39 10.976 10.757 10.976c3.073 0 6.147-.878 8.562-2.853l-2.196-3.293c-1.756 1.317-3.951 2.195-6.146 2.195c-2.854 0-5.708-1.317-6.367-5.05h15.587v-1.755c.22-6.806-3.732-11.196-9.66-11.196Zm0 3.951c2.853 0 4.83 1.757 5.268 5.05h-10.976c.439-2.854 2.415-5.05 5.708-5.05Zm114.372 7.025v-18.879h-4.61v10.976c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61v-10.537Zm-16.903 0c0-3.732 2.414-6.805 6.366-6.805c3.732 0 6.366 2.854 6.366 6.805c0 3.732-2.634 6.805-6.366 6.805c-3.952-.22-6.366-3.073-6.366-6.805Zm-154.107 0v-10.537h-4.61v2.634c-1.537-1.975-3.732-3.073-6.586-3.073c-5.927 0-10.537 4.61-10.537 10.976c0 6.366 4.61 10.976 10.537 10.976c3.074 0 5.269-1.097 6.586-3.073v2.634h4.61v-10.537Zm-17.123 0c0-3.732 2.415-6.805 6.366-6.805c3.732 0 6.367 2.854 6.367 6.805c0 3.732-2.635 6.805-6.367 6.805c-3.951-.22-6.366-3.073-6.366-6.805Z"/><path fill="#FF5F00" d="M93.298 16.903h69.15v124.251h-69.15z"/><path fill="#EB001B" d="M97.689 79.029c0-25.245 11.854-47.637 30.074-62.126C114.373 6.366 97.47 0 79.03 0C35.343 0 0 35.343 0 79.029c0 43.685 35.343 79.029 79.029 79.029c18.44 0 35.343-6.366 48.734-16.904c-18.22-14.269-30.074-36.88-30.074-62.125Z"/><path fill="#F79E1B" d="M255.746 79.029c0 43.685-35.343 79.029-79.029 79.029c-18.44 0-35.343-6.366-48.734-16.904c18.44-14.488 30.075-36.88 30.075-62.125c0-25.245-11.855-47.637-30.075-62.126C141.373 6.366 158.277 0 176.717 0c43.686 0 79.03 35.563 79.03 79.029Z"/></svg>
+      </div>
+      </li>
+      <li class="order-last lg:order-2 m-auto">
+        <p class="lg:mt-m150">© 2022 Created by Mathea, Nanna & Sofie</p>
+        </li>
+      <li class="order-2">
+        <img  width="180" height="195" src="images/nicecream_logo.webp" alt="Nicecream logo" class="m-auto lg:m-0">
+        </li>
+    </ul>
+      </footer>
+    
+    
       <script type="module" src="./main.js"></script>
   </body>
 </html>

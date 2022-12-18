@@ -11,7 +11,7 @@ module.exports = {
       "pink-600": "#EC3A8E",
       "pink-700": "#E91F7F",
       "pink-800": "#D81572",
-      "green-100": "#ACFEF6",
+      "green-100": "#B3E9E7",
       "green-200": "#10FBE4",
       "green-300": "#04EFD8",
       "green-400": "#04D9C4",
@@ -52,7 +52,7 @@ module.exports = {
       praise: "'Praise', cursive"
     },
     fontSize:{ 
-      display:"8rem",
+      display:"6.25rem",
       text5xl: "4rem",
       text4xl:"3.063rem",
       text3xl:"2.438rem",
@@ -68,14 +68,14 @@ module.exports = {
         lgprimarybtnpy:"10px",
         lgprimarybtnpx:"20px",
         mdprimarybtnpy:"5px",
-        mdprimarybtnpx:"10px",
+        mdprimarybtnpx:"15px",
         woltbtnpy:"5px",
         woltbtnpx:"15px",
         pleft:"8rem",
         p4rem:"4rem"
       },
       margin:{
-        headertop:"122px",
+        headertop:"247px",
         headertopmobile:"52px",
         mauto:"auto",
         m150:"150px",
@@ -98,6 +98,9 @@ module.exports = {
         woltbtnradius: "15px",
         scoopcardradius:"15px",
         },
+        lineHeight:{
+          plineheight:"20px"
+        }
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],

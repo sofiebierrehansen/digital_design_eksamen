@@ -20,14 +20,14 @@
 
     <title>Find os</title>
     <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.ab8cd837.css">
+    <link rel="stylesheet" href="./assets/main.c9bbaf6c.css">
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header>
       <!------Burger menu------->
-      <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg w-screen z-40 fixed">
+      <nav class="md:w-full md:fixed md:top-0 shadow-lg backdrop-blur-lg w-screen z-40 fixed">
         <div class="flex lg:hidden shadow-lg">
-          <a class="mr-mauto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
+          <a class="mr-auto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
          <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
         </div>
         <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden bg-[url('images/sprinkels.svg')] bg-no-repeat">
@@ -35,10 +35,10 @@
           <li class="text-right"><a href="book-os.html">Book os</a></li>
           <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
           <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
-            <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+         <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
             <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
               <li><a href="om-nicecream.html">Nicecreams historie</a></li>
-              <li><a>Spørgsmål og svar</a></li>
+              <li><p>Spørgsmål og svar</p></li>
             </ul>
           </div>
           </li>
@@ -47,49 +47,53 @@
             <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
               <li><a class="p-0" href="find-os.html">Find os</a></li>
               <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
-              <li><a>Få din egen Nicecream butik</a></li>
+              <li><p>Få din egen Nicecream butik</p></li>
             </ul>
           </div>
         </li>
-          <li class="text-right"><a href="#">Kurv</a></li>
-          <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
+          <li class="text-right"><a href="kurv.html">Kurv</a></li>
+          <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltBtnRadius py-woltBtnpy shadow-md px-woltBtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
         </ul>
           <!-----desktop menu-->
-          <ul id="topnav2" class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
-           <a  class="mr-mauto" href="index.html"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
-            <li class="self-center hover:text-green-800 "><a href="vores-menu.html">Vores menu</a></li>
-            <li class="self-center hover:text-green-800 ring-yellow-500"><a href="book-os.html">Book os</a></li>
-            <li class="self-center hover:text-green-800 outline-yellow-500"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+          <ul id="topnav2" class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-textlg justify-end">
+           <li class="mr-auto"><a href="index.html" class=" focus:outline-none  focus:outline-yellow-500"> <img src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a></li>
+            <li class="self-center hover:text-green-800"><a href="vores-menu.html" class="focus:outline-none  focus:outline-yellow-500">Vores menu</a></li>
+            <li class="self-center hover:text-green-800"><a href="book-os.html" class=" focus:outline-none  focus:outline-yellow-500">Book os</a></li>
+            <li class="self-center hover:text-green-800"><a href="koeb-gavekort.html" class=" focus:outline-none  focus:outline-yellow-500">Køb gavekort</a></li>
             <li class="self-center hover:text-green-800 "><div class="dropdown dropdown-hover">
-              <label tabindex="0" class="text-[24px] flex">Om os <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-              <ul tabindex="0" class="dropdown-content bg-stone-100 menu p-2 shadow-md rounded-box w-64 text-[24px]">
+              <label tabindex="0" class="text-textlg flex">Om os <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100 menu p-2 shadow-md rounded-box w-64 text-textlg">
                 <li><a href="om-nicecream.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Nicecreams historie</a></li>
-                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Spørgsmål & svar</a></li>
+                <li><p class="text-stone-900 hover:underline hover:bg-green-100">Spørgsmål & svar</p></li>
               </ul>
             </div></li>
             <li class="self-center hover:text-green-800"><div class="dropdown dropdown-hover">
-              <label tabindex="0" class=" text-[24px] flex">Kontakt <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-              <ul tabindex="0" class="dropdown-content bg-stone-100  menu p-2 shadow-md rounded-box w-64 text-[24px]">
+              <label tabindex="0" class=" text-textlg flex">Kontakt <svg width="32" height="32" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+              <ul tabindex="0" class="dropdown-content bg-stone-100  menu p-2 shadow-md rounded-box w-64 text-textlg">
                 <li><a href="find-os.html" class="hover:underline text-stone-900 mb-2 hover:bg-green-100">Find os</a></li>
-                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Bliv forhandler</a></li>
-                <li><a class="text-stone-900 hover:underline hover:bg-green-100">Få din egen Nicecream butik</a></li>
+                <li><p class="text-stone-900 hover:underline hover:bg-green-100">Bliv forhandler</p></li>
+                <li><p class="text-stone-900 hover:underline hover:bg-green-100">Få din egen Nicecream butik</p></li>
               </ul>
             </div></li>
-            <a class="self-center" href="#"><svg class="fill-stone-900 hover:fill-green-800" width="32" height="32" viewBox="0 0 24 24"><path class="" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V8q0-.825.588-1.412Q5.175 6 6 6h2q0-1.65 1.175-2.825Q10.35 2 12 2q1.65 0 2.825 1.175Q16 4.35 16 6h2q.825 0 1.413.588Q20 7.175 20 8v12q0 .825-.587 1.413Q18.825 22 18 22Zm0-2h12V8h-2v2q0 .425-.287.712Q15.425 11 15 11t-.712-.288Q14 10.425 14 10V8h-4v2q0 .425-.287.712Q9.425 11 9 11t-.712-.288Q8 10.425 8 10V8H6v12Zm4-14h4q0-.825-.587-1.412Q12.825 4 12 4q-.825 0-1.412.588Q10 5.175 10 6ZM6 20V8v12Z"/></svg></a>
-            <a class="bg-blue-500 text-stone-100 self-center font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a>
+           <li class="self-center"><a href="kurv.html" class=" focus:outline-none  focus:outline-yellow-500"><svg class="fill-stone-900 hover:fill-green-800" width="32" height="32" viewBox="0 0 24 24"><path class="" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V8q0-.825.588-1.412Q5.175 6 6 6h2q0-1.65 1.175-2.825Q10.35 2 12 2q1.65 0 2.825 1.175Q16 4.35 16 6h2q.825 0 1.413.588Q20 7.175 20 8v12q0 .825-.587 1.413Q18.825 22 18 22Zm0-2h12V8h-2v2q0 .425-.287.712Q15.425 11 15 11t-.712-.288Q14 10.425 14 10V8h-4v2q0 .425-.287.712Q9.425 11 9 11t-.712-.288Q8 10.425 8 10V8H6v12Zm4-14h4q0-.825-.587-1.412Q12.825 4 12 4q-.825 0-1.412.588Q10 5.175 10 6ZM6 20V8v12Z"/></svg></a></li>
+            <li class="self-center"><a class="bg-blue-500 text-stone-100 font-praise font-normal rounded-woltBtnRadius py-woltBtnpy shadow-md px-woltBtnpx hover:bg-blue-600 focus:outline-none  focus:outline-yellow-500" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
           </ul>
         </nav>
       </header>
-      <main class="max-w-screen-2xl  lg:bg-[url('images/sprinkels.svg')] bg-no-repeat bg-left-top">
-        <h1 class="font-luckiestguy text-text3xl lg:text-text5xl pt-[113px] md:pt-0 md:mt-headertop text-center text-stone-900 md:leading-[70px]">Ring, skriv eller kom på besøg</h1>
-        <section class="lg:ml-m150 mx-m20 mt-10 lg:mt-[95px]">
-          <h2 class="font-luckiestguy text-text3xl lg:text-text4xl text-stone-900">Brug for at kontakte os?</h2>
+      <div>
+        <img class="absolute -z-10 -top-32 lg:top-64 -right-48 md:block" src="./assets/blop_pink1.08c026c8.svg" alt="Blå illustration">
+        <img class="absolute -z-10 left-5 top-32 hidden md:block" src="./assets/sprinkels.8c8b3b06.svg" alt="Krymmel illustration">
+      </div>
+      <main class="max-w-screen-2xl">
+        <h1 class="font-luckiestguy text-text4xl lg:text-text5xl pt-[113px] md:pt-0 md:mt-[284px] text-center text-stone-900 md:leading-[70px]">Ring, skriv eller kom på besøg</h1>
+        <section class="lg:ml-spacing2xl mx-spacingmd mt-10 lg:mt-[95px]">
+          <h2 class="font-luckiestguy text-textxl lg:text-text4xl text-stone-900">Brug for at kontakte os?</h2>
           <p class="font-montserrat font-bold text-stone-900">tlf: +45 71 99 90 74</p>
           <p class="font-montserrat font-bold text-stone-900">e-mail: info@nicecreamcph.com</p>
           <p class="font-montserrat text-stone-900 lg:w-[529px]">Du kan ringe til os i butikkens åbningstider på tlf: +45  71 99 90 74 
             eller sende os en mail på info@nicecreamcph.com. Du kan også skrive til os på vores Instagram eller på vores facebook og vi vil svare sig hurtigst muligt. </p>
         </section>
-        <section class="flex flex-wrap gap-20 mt-[128px] mx-16 lg:ml-m150  lg:bg-[url('images/mange_sprinkle.svg')] bg-no-repeat bg-right-bottom">
+        <section class="flex flex-wrap gap-20 mt-[128px] mx-16 lg:ml-spacing2xl  lg:bg-[url('images/mange_sprinkle.svg')] bg-no-repeat bg-right-bottom">
           <article class="font-montserrat bg-orange-100 w-[350px] py-4 px-4 rounded-[15px]">
             <img src="./assets/butik_norrebro.22a83b57.webp" alt="Nørrebro Nicecream butik" class="mb-4">
             <a href="https://www.google.com/maps/place/Nicecream/@55.6904605,12.5602802,17z/data=!4m5!3m4!1s0x465253009990e9e5:0x7aa40e1972ac1322!8m2!3d55.6904605!4d12.5602802"><p class="underline mb-4">Nicecream Nørrebro</p></a>
@@ -137,11 +141,12 @@
             </p>
           </article>
         </section>
-        <section class="grid lg:place-content-center mx-m20 p-2 lg:p-8 lg:mx-m150 mt-8 lg:mt-[158px]">
+        <section class="grid lg:place-content-center mx-spacingmd p-2 lg:p-8 lg:mx-spacing2xl mt-4 lg:mt-[158px]">
+          <img src="./assets/mange_sprinkle.415e7ae4.svg" alt="Krymmel illustration" class="md:hidden">
           <img src="./assets/kort.462a3a54.webp" alt="Kort over Irma butikker i Danmark">
         </section>
       </main>
-      <footer class="bg-pink-100 font-montserrat mt-m150 m-auto p-16">
+      <footer class="bg-pink-100 font-montserrat mt-spacing2xl m-auto p-16">
         <div class="md:grid md:grid-cols-3 gap-5 m-auto">
         <ul class="mt-[2rem] md:mt-[0] leading-7 m-auto">
           <li class="font-bold">Nicecream
@@ -166,10 +171,10 @@
         </ul>
       </div>
       <ul class="grid lg:grid-cols-3 gap-24">
-      <li class="grid m-auto lg:ml-m150 mt-[70px] order-1">
+      <li class="grid m-auto lg:ml-spacing2xl mt-[70px] order-1">
         <div class="flex">
         <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg>
-        <svg width="54" height="54" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592c.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" fill="#000000"/></svg>
+        <svg width="54" height="54" viewBox="0 0 24 24"><path d="spacingmd 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592c.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z" fill="#000000"/></svg>
         <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M6.781 12.894v.016c0 .266-.11.505-.286.677a.928.928 0 0 1-.672.286h-.011h.001h-.002a.978.978 0 0 1-.978-.978v-.012c0-.264.11-.502.286-.672a.942.942 0 0 1 .677-.287h.017h-.001a.979.979 0 0 1 .969.968v.001zm12.019-.013a.979.979 0 1 1-1.958 0v-.017c0-.263.11-.501.286-.67a.99.99 0 0 1 1.386.001a.924.924 0 0 1 .287.671v.017v-.001zm-10.832.01a2.009 2.009 0 1 0-4.017.001a2.009 2.009 0 0 0 4.017 0zm12.009-.01a2.009 2.009 0 1 0-.589 1.422c.363-.353.589-.846.589-1.391v-.032v.002zm-11.125.01a2.901 2.901 0 0 1-5.802 0v-.041c0-.788.328-1.499.854-2.005l.001-.001A2.8 2.8 0 0 1 5.912 10h.048h-.002h.041A2.78 2.78 0 0 1 8 10.846l.001.001c.524.508.85 1.218.85 2.005v.044v-.002zm12.02-.01v.004a2.901 2.901 0 1 1-.849-2.051c.524.508.849 1.218.849 2.004v.045zm-10.041.031l.001-.07a4.625 4.625 0 0 0-1.41-3.33l-.001-.001A4.623 4.623 0 0 0 6.09 8.099l-.074.001h.004h-.032c-.875 0-1.694.24-2.394.658l.021-.012c-1.443.85-2.397 2.397-2.397 4.166s.953 3.316 2.374 4.154l.022.012a4.63 4.63 0 0 0 2.373.646h.036h-.002l.07.001a4.625 4.625 0 0 0 3.33-1.41l.001-.001a4.623 4.623 0 0 0 1.412-3.331l-.001-.073v.004zm6.96-5.969c-1.66-.729-3.594-1.154-5.628-1.154l-.172.001H12a14.836 14.836 0 0 0-6.065 1.182l.097-.037h.017c.832 0 1.624.175 2.34.489l-.037-.015c.739.315 1.37.746 1.901 1.276a6.073 6.073 0 0 1 1.255 1.867l.015.039c.3.679.474 1.471.474 2.303v.018v-.001c0-1.619.641-3.088 1.682-4.168l-.002.002a6.107 6.107 0 0 1 1.811-1.264l.038-.016a5.652 5.652 0 0 1 2.252-.521h.007zm4.99 5.968a4.807 4.807 0 1 0-1.405 3.402a4.626 4.626 0 0 0 1.406-3.327l-.001-.079zm-2.77-5.895H24a5.528 5.528 0 0 0-.766 1.16l-.014.032a4.47 4.47 0 0 0-.412 1.163l-.005.03a5.923 5.923 0 0 1 1.144 3.515a5.97 5.97 0 0 1-10.594 3.776l-.008-.011c-.436.541-.879 1.15-1.291 1.781l-.054.087a8.695 8.695 0 0 0-.576-.882l.016.023q-.442-.63-.776-1.015a5.97 5.97 0 0 1-9.452-7.288l-.012.018a4.57 4.57 0 0 0-.429-1.218l.012.025a5.54 5.54 0 0 0-.789-1.2L0 7.019h3.802a12.375 12.375 0 0 1 3.61-1.611l.088-.02a16.569 16.569 0 0 1 4.425-.588h.079H12h.107c1.523 0 2.995.213 4.39.611l-.113-.027c1.378.383 2.584.942 3.672 1.665l-.047-.029z"/></svg>
         <svg width="54" height="54" viewBox="0 0 24 24"><path d="M10.59 2c.64 0 .91.27.99.97l.21 3.17l.24 4.15c.02.35-.03.71-.17 1.03c-.22.45-.72.57-1.13.26c-.23-.19-.42-.44-.58-.71L6.42 4.55c-.36-.61-.25-1.01.35-1.39C7.5 2.68 9.73 2 10.59 2m4.24 12.85l.26.06l3.86 1.4c.66.24.84.61.55 1.26c-.44 1.13-1.16 2.09-2.08 2.88c-.46.4-.92.33-1.21-.17l-2.27-3.96c-.39-.71.09-1.52.89-1.47M4.5 14c0-.74 0-1.45.25-2.13c.22-.67.58-.87 1.25-.6l3.63 1.54c.46.19.72.51.7 1.03c-.03.52-.36.74-.8.89l-3.68 1.21c-.7.23-1.06.02-1.21-.69c-.09-.42-.17-.85-.14-1.25m7.47 7c-.02.81-.37 1.12-1.16 1c-1.04-.2-2-.6-2.85-1.24c-.42-.32-.51-.81-.2-1.23l2.71-3.56c.23-.3.56-.37.92-.23c.38.14.58.44.58.85V21m2.48-7.68c-.72.01-1.22-.82-.81-1.41c.83-1.24 1.71-2.45 2.59-3.65c.27-.41.71-.44 1.08-.1c.93.84 1.6 1.84 1.98 3.06c.14.45-.04.86-.46.98l-3.74.97l-.64.15z" fill="#000000"/></svg>
         <svg width="54" height="54" viewBox="0 0 24 24"><path fill="#000000" d="M4 20q-.825 0-1.412-.587Q2 18.825 2 18V6q0-.825.588-1.412Q3.175 4 4 4h16q.825 0 1.413.588Q22 5.175 22 6v12q0 .825-.587 1.413Q20.825 20 20 20Zm8-7L4 8v10h16V8Zm0-2l8-5H4ZM4 8V6v12Z"/></svg>
@@ -180,7 +185,7 @@
       </div>
       </li>
       <li class="order-last lg:order-2 m-auto">
-        <p class="lg:mt-m150 text-center">CVR.nr. 43062506 <br>© 2022 Created by Mathea, Nanna & Sofie</p>
+        <p class="lg:mt-spacing2xl text-center">CVR.nr. 43062506 <br>© 2022 Created by Mathea, Nanna & Sofie</p>
         </li>
       <li class="order-2">
         <img  width="180" height="195" src="./assets/nicecream_logo.d05ac3f6.webp" alt="Nicecream logo" class="m-auto lg:m-0">

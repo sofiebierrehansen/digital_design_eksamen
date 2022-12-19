@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{html,vue,js,ts,jsx,tsx,xml}"],
   theme: {
     colors: {
       "pink-100": "#FDE6F1",

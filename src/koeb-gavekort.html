@@ -26,34 +26,35 @@
     </a>
     <header>
       <!------Burger menu------->
-        <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg z-10">
-          <div class="flex lg:hidden shadow-lg">
-            <a class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
-           <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
+      <nav class="md:w-navwidth md:fixed md:top-0 shadow-lg backdrop-blur-lg w-screen z-40 fixed">
+        <div class="flex lg:hidden shadow-lg">
+          <a class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain p-1 ml-7"></a>
+         <div id="menuknap" class="font-montserrat text-text2xl p-4 text-stone-900 absolute z-20 right-4">☰</div>
+        </div>
+        <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden bg-[url('images/sprinkels.svg')] bg-no-repeat">
+          <li class="text-right mt-8"><a href="vores-menu.html">Vores menu</a></li>
+          <li class="text-right"><a href="book-os.html">Book os</a></li>
+          <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
+          <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+            <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+            <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+              <li><a href="om-nicecream.html">Nicecreams historie</a></li>
+              <li><a>Spørgsmål og svar</a></li>
+            </ul>
           </div>
-          <ul id="topnav1" class="bg-stone-100 text-stone-900 shadow-lg font-semibold w-screen p-8 font-montserrat leading-10 fixed top-0 z-10  lg:hidden">
-            <li class="text-right mt-8"><a href="vores-menu.html">Vores menu</a></li>
-            <li class="text-right"><a href="book-os.html">Book os</a></li>
-            <li class="text-right"><a href="koeb-gavekort.html">Køb gavekort</a></li>
-            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
-              <label class="flex" tabindex="0" >Om os <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
-                <li><a href="om-nicecream.html">Nicecreams historie</a></li>
-                <li><a>Spørgsmål og svar</a></li>
-              </ul>
-            </div>
-            </li>
-            <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
-              <label class="flex" tabindex="0" >Kontakt <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
-              <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
-                <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
-                <li><a>Få din egen Nicecream butik</a></li>
-              </ul>
-            </div>
           </li>
-            <li class="text-right"><a href="#">Kurv</a></li>
-            <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
-          </ul>
+          <li class="text-right"><div class="dropdown dropdown-bottom dropdown-end">
+            <label class="flex" tabindex="0" >Kontakt <svg class="mt-2" width="20" height="20" viewBox="0 0 20 20"><path fill="#353535" d="M8.12 9.29L12 13.17l3.88-3.88a.996.996 0 1 1 1.41 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0L6.7 10.7a.996.996 0 0 1 0-1.41c.39-.38 1.03-.39 1.42 0z"/></svg></label>
+            <ul tabindex="0" class="shadow-lg dropdown-content w-screen bg-green-100">
+              <li><a class="p-0" href="find-os.html">Find os</a></li>
+              <li><a class="p-0" href="om-nicecream.html">Bliv forhandler</a></li>
+              <li><a>Få din egen Nicecream butik</a></li>
+            </ul>
+          </div>
+        </li>
+          <li class="text-right"><a href="#">Kurv</a></li>
+          <li class="text-right mt-4"><a class="bg-blue-500 text-text2xl  text-stone-100 self-center mr-auto font-praise font-normal rounded-woltbtnradius py-woltbtnpy shadow-md px-woltbtnpx hover:bg-blue-600" href="https://wolt.com/en/DNK/copenhagen/venue/nicecream">Wolt</a></li>
+        </ul>
           <!-----desktop menu-->
           <ul id="topnav2" class="hidden lg:flex gap-[2.5rem] text-stone-900 font-montserrat px-[50px] py-[23px] font-semibold text-[24px] justify-end">
            <a  class="mr-mauto" href="index.html"> <img src="/images/nicecream_logo.webp" alt="Nicecream logo" class="w-[68px] h-[74px] object-contain"></a>
@@ -81,8 +82,8 @@
         </nav>
       </header>
       <main id="main" class="max-w-screen-2xl m-auto">
-        <h1 class="font-luckiestguy text-text3xl md:text-text5xl mt-[63px] md:mt-headertop md:mx-auto text-stone-900  lg:w-[947px] text-center  md:leading-[70px]">Køb et gavekort til Nicecream</h1>
-        <section class="grid lg:grid-cols-2 gap-20 mt-12">
+        <h1 class="font-luckiestguy text-text3xl md:text-text5xl pt-[99px] lg:pt-0 md:mt-headertop lg:mb-m150 md:mx-auto text-stone-900  lg:w-[947px] text-center  md:leading-[70px]">Køb et gavekort til Nicecream</h1>
+        <section class="grid lg:grid-cols-2 gap-20 mt-4">
           <img src="images/desktop/gavekort.webp" alt="Nicecream gavekort" class="mx-auto lg:ml-m150">
           <div class="p-4">
             <div class="form-control w-full max-w-xs mx-auto">

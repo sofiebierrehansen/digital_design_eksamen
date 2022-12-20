@@ -165,19 +165,14 @@ window.addEventListener("load", () => {
 });
 
 //animationer
-// inView
-inView(".cardslide1", ({ target }) => {
-  animate(
-    target.querySelectorAll("cardright"),
-    { x: [2000, 0] },
-    { duration: 1, delay: stagger(1, { start: 0.25 }) }
-  );
+inView(".slideright1", () => {
+  animate(".slideright1", { x: [2000, 0] }, { duration: 1 });
 });
 
-inView(".cardslide2", ({ target }) => {
-  animate(
-    target.querySelectorAll("cardleft"),
-    { x: [-2000, 0] },
-    { duration: 1, delay: stagger(1, { start: 0.25 }) }
-  );
+inView(".slideright2", () => {
+  animate(".slideright2", { x: [2000, 0] }, { duration: 1 });
+});
+
+inView(".slideleft", () => {
+  animate(".slideleft", { x: [-2000, 0] }, { duration: 1 });
 });

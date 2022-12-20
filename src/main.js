@@ -41,10 +41,10 @@ function fjernCookieboks(){
     sessionStorage.setItem("fjernCookieboks", true);
 }
 
-//if (sessionStorage.getItem("fjernCookieboks")){
-    //cookieboks.classList.add("hidden");
+if (sessionStorage.getItem("fjernCookieboks")){
+    cookieboks.classList.add("hidden");
 
-//}
+}
 
 
 //login 

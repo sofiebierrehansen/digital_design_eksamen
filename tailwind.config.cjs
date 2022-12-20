@@ -65,42 +65,33 @@ module.exports = {
     },
     extend: {
       padding:{
-        lgprimarybtnpy:"10px",
-        lgprimarybtnpx:"20px",
-        mdprimarybtnpy:"5px",
-        mdprimarybtnpx:"15px",
-        woltbtnpy:"5px",
-        woltbtnpx:"15px",
-        pleft:"8rem",
-        p4rem:"4rem"
+        lgPrimaryBtnpy:"10px",
+        lgPrimaryBtnpx:"20px",
+        mdPrimaryBtnpy:"5px",
+        mdPrimaryBtnpx:"15px",
+        woltBtnpy:"5px",
+        woltBtnpx:"15px",
+
       },
       margin:{
-        headertop:"247px",
-        headertopmobile:"52px",
-        mauto:"auto",
-        m150:"150px",
-        m20:"20px"
-      },
-      width:{
-        textwidth:"415px",
-        icewidth:"596px",
-        navwidth:"100%",
-        w270:"270px"
-      },
-      height:{
-        iceheight:"1203px",
-        h270:"270px",
+        spacing2xl:"150px",
+        spacingxl:"100px",
+        spacinglg:"40px",
+        spacingmd:"20px",
+        spacingsm:"10px",
+
       },
       borderRadius:{
-        lgprimarybtnradius:"15px",
-        mdprimarybtnradius:"10px",
-        mdsecondarybtnradius:"10px",
-        woltbtnradius: "15px",
-        scoopcardradius:"15px",
+        lgPrimaryBtnRadius:"15px",
+        mdPrimaryBtnRadius:"10px",
+        mdSecondaryBtnRadius:"10px",
+        woltBtnRadius: "15px",
+        scoopCardRadius:"15px",
         },
-        lineHeight:{
-          plineheight:"20px"
-        }
+        
+        cursor:{
+          'iscursor':"url(https://api.iconify.design/material-symbols:icecream-outline.svg?color=%23888888) 25 25, pointer",
+        },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],

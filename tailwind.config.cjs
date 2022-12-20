@@ -41,60 +41,61 @@ module.exports = {
       "stone-700": "#8D8989",
       "stone-800": "#726F6F",
       "stone-900": "#353535",
-      "blue-500":"#419CDA",
-      "blue-600":"#1B79B9",
-      "grey-300":"#CCCCCC",
-
+      "blue-500": "#419CDA",
+      "blue-600": "#1B79B9",
+      "grey-300": "#CCCCCC",
     },
     fontFamily: {
       luckiestguy: "'Luckiest Guy', cursive",
       montserrat: "'Montserrat', sans-serif",
-      praise: "'Praise', cursive"
+      praise: "'Praise', cursive",
     },
-    fontSize:{ 
-      display:"6.25rem",
+    fontSize: {
+      display: "6.25rem",
       text5xl: "4rem",
-      text4xl:"3.063rem",
-      text3xl:"2.438rem",
-      text2xl:"1.938rem",
-      textxl:"1.563rem",
-      textlg:"1.25rem",
-      textmd:"1.125rem",
-      textsm:"1rem",
-      textxs:"0.75rem"
+      text4xl: "3.063rem",
+      text3xl: "2.438rem",
+      text2xl: "1.938rem",
+      textxl: "1.563rem",
+      textlg: "1.25rem",
+      textmd: "1.125rem",
+      textsm: "1rem",
+      textxs: "0.75rem",
     },
     extend: {
-      padding:{
-        lgPrimaryBtnpy:"10px",
-        lgPrimaryBtnpx:"20px",
-        mdPrimaryBtnpy:"5px",
-        mdPrimaryBtnpx:"15px",
-        woltBtnpy:"5px",
-        woltBtnpx:"15px",
-
+      padding: {
+        lgPrimaryBtnpy: "10px",
+        lgPrimaryBtnpx: "20px",
+        mdPrimaryBtnpy: "5px",
+        mdPrimaryBtnpx: "15px",
+        woltBtnpy: "5px",
+        woltBtnpx: "15px",
       },
-      margin:{
-        spacing2xl:"150px",
-        spacingxl:"100px",
-        spacinglg:"40px",
-        spacingmd:"20px",
-        spacingsm:"10px",
-
+      margin: {
+        spacing2xl: "150px",
+        spacingxl: "100px",
+        spacinglg: "40px",
+        spacingmd: "20px",
+        spacingsm: "10px",
       },
-      borderRadius:{
-        lgPrimaryBtnRadius:"15px",
-        mdPrimaryBtnRadius:"10px",
-        mdSecondaryBtnRadius:"10px",
+      borderRadius: {
+        lgPrimaryBtnRadius: "15px",
+        mdPrimaryBtnRadius: "10px",
+        mdSecondaryBtnRadius: "10px",
         woltBtnRadius: "15px",
-        scoopCardRadius:"15px",
-        },
-        
-        cursor:{
-          'iscursor':"url(https://api.iconify.design/material-symbols:icecream-outline.svg?color=%23888888) 25 25, pointer",
-        },
+        scoopCardRadius: "15px",
+      },
+
+      cursor: {
+        iscursor: "url(/images/icecream-cursor.svg) 25 25, pointer",
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("daisyui"),
+  ],
   daisyui: {
     styled: true,
     themes: false,

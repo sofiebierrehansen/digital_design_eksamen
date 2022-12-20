@@ -87,7 +87,7 @@ module.exports = {
       },
 
       cursor: {
-        iscursor: "url(/images/icecream-cursor.svg) 25 25, pointer",
+        iscursor: "url(/images/is_cursor.png) 25 25, pointer",
       },
     },
   },

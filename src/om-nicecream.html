@@ -250,15 +250,11 @@
     </header>
     <div>
       <img
-        class="absolute top-0 -left-48 -z-10 md:block"
+        class="absolute top-0 -left-48 -z-10 hidden md:block lg:block"
         src="images/blops/blop_blue1.svg"
         alt="Blå illustration"
       />
-      <img
-        class="absolute -right-80 top-[150rem] -z-10 md:top-[60rem] lg:-right-96"
-        src="images/blops/blop_yellow1.svg"
-        alt="Gul illustration"
-      />
+
       <img
         class="absolute top-[172rem] -left-20 -z-10 sm:hidden lg:top-[108rem] lg:block"
         src="images/mange_sprinkle.svg"
@@ -267,12 +263,17 @@
     </div>
     <main class="max-w-screen-2xl">
       <section
-        class="mx-spacingmd grid md:mt-[247px] lg:mx-4 lg:grid-cols-2 lg:gap-56 lg:p-8"
+        class="mx-spacingmd grid md:mt-[247px] lg:mx-spacing2xl lg:grid-cols-2 lg:gap-20 lg:p-8"
       >
+        <img
+          class="absolute -right-80 top-[150rem] -z-10 hidden md:top-[60rem] lg:-right-96 lg:block"
+          src="images/blops/blop_yellow1.svg"
+          alt="Gul illustration"
+        />
         <img
           src="images/desktop/founders.webp"
           alt="David og Fannar"
-          class="order-last mx-auto p-8 lg:order-first lg:ml-spacing2xl"
+          class="order-last lg:order-first"
         />
         <div>
           <h1

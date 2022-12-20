@@ -1,9 +1,7 @@
 import "./style.css";
-import Alpine from 'alpinejs'
- 
-window.Alpine = Alpine
- 
-Alpine.start()
+import Alpine from "alpinejs";
+window.Alpine = Alpine;
+Alpine.start();
 
 window.addEventListener("load", sidenVises);
 
@@ -30,24 +28,22 @@ function toggleMenu() {
 
 const acceptCookie = document.querySelector("#accepter");
 const denyCookie = document.querySelector("#afvis");
-const cookieboks = document.querySelector ("#cookieboks");
+const cookieboks = document.querySelector("#cookieboks");
 
 acceptCookie.addEventListener("click", fjernCookieboks);
 denyCookie.addEventListener("click", fjernCookieboks);
 
-function fjernCookieboks(){
-    cookieboks.classList.add("hidden"); 
+function fjernCookieboks() {
+  cookieboks.classList.add("hidden");
 
-    sessionStorage.setItem("fjernCookieboks", true);
+  sessionStorage.setItem("fjernCookieboks", true);
 }
 
-if (sessionStorage.getItem("fjernCookieboks")){
-    cookieboks.classList.add("hidden");
-
+if (sessionStorage.getItem("fjernCookieboks")) {
+  cookieboks.classList.add("hidden");
 }
 
-
-//login 
+//login
 class Login extends HTMLElement {
   constructor() {
     super();
@@ -166,3 +162,4 @@ window.addEventListener("load", () => {
   }
 });
 
+//animationer

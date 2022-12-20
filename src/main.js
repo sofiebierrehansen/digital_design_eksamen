@@ -1,4 +1,6 @@
 import "./style.css";
+/* Import af Motion One bibliotek */
+import { animate, stagger, inView, scroll, timeline } from "motion";
 import Alpine from "alpinejs";
 window.Alpine = Alpine;
 Alpine.start();
@@ -163,3 +165,19 @@ window.addEventListener("load", () => {
 });
 
 //animationer
+// inView
+inView(".cardslide1", ({ target }) => {
+  animate(
+    target.querySelectorAll("cardright"),
+    { x: [2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
+
+inView(".cardslide2", ({ target }) => {
+  animate(
+    target.querySelectorAll("cardleft"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});

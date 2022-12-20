@@ -22,15 +22,11 @@
     />
 
     <title>Book os</title>
-    <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.fcd7a2f4.css">
+    <script type="module" crossorigin src="./assets/main.6a6fb72b.js"></script>
+    <link rel="stylesheet" href="./assets/main.376059cc.css">
   </head>
-  <a
-    class="absolute top-32 -left-full font-montserrat transition-transform focus:left-8 focus:outline-none focus:outline-green-800"
-    href="#main"
-  >
-    Skip to content
-  </a>
+
+  <!-------Skip to content--------->
   <body class="overflow-x-hidden">
     <a
       class="absolute top-32 -left-full font-montserrat transition-transform focus:left-8 focus:outline-none focus:outline-green-800"
@@ -82,7 +78,9 @@
           <li class="text-right">
             <a href="vores-menu.html">Vores menu</a>
           </li>
-          <li class="text-right"><a href="book-os.html">Book os</a></li>
+          <li class="text-right text-green-800">
+            <a href="book-os.html">Book os</a>
+          </li>
           <li class="text-right">
             <a href="koeb-gavekort.html">Køb gavekort</a>
           </li>
@@ -159,7 +157,7 @@
               >Vores menu</a
             >
           </li>
-          <li class="self-center hover:text-green-800">
+          <li class="self-center text-green-800 hover:text-green-800">
             <a
               href="book-os.html"
               class="focus:outline-none focus:outline-yellow-500"
@@ -262,6 +260,7 @@
         </ul>
       </nav>
     </header>
+    <!---------------Krymmel og blops illustrationer-------------------------->
     <div>
       <img
         class="absolute left-5 top-20 -z-10 w-16 lg:top-32 lg:left-28 lg:w-auto"
@@ -269,7 +268,7 @@
         alt="Krymmel illustration"
       />
       <img
-        class="absolute -right-80 top-52 -z-10 md:-top-40 lg:-right-96"
+        class="absolute -right-80 top-52 -z-10 hidden md:-top-40 lg:-right-96 lg:block"
         src="./assets/blop_yellow1.7405c977.svg"
         alt="Gul illustration"
       />
@@ -279,12 +278,14 @@
         alt="Illustration af meget krymmel"
       />
     </div>
+    <!---------------Main----------------------->
     <main id="main" class="m-auto mb-[117px] max-w-screen-2xl">
       <h1
         class="pt-[96px] text-center font-luckiestguy text-text3xl text-stone-900 md:mx-auto md:mt-[247px] md:pt-0 md:text-text5xl md:leading-[70px] lg:w-[947px]"
       >
         Når dit event skal være noget særligt
       </h1>
+
       <section
         class="m-spacingmd font-montserrat lg:mt-[102px] lg:ml-spacing2xl"
       >
@@ -415,6 +416,7 @@
           />
         </div>
       </section>
+      <!-------------Bookingformular. DaisyUI forms. Billede lagt ind som baggrundsbillede-------------------->
       <section
         class="mx-spacingmd bg-right bg-no-repeat md:ml-spacing2xl lg:bg-[length:1000px_1000px] xl:bg-[url('images/desktop/coconut_tree.webp')]"
       >
@@ -424,6 +426,8 @@
           >
             Bookingformular
           </h2>
+
+
           <form class="form-control -z-10 mr-auto w-full max-w-xs">
             <label for="navn" class="font-montserra label label-text mb-2"
               >Navn*
@@ -552,6 +556,7 @@
             </button>
           </div>
         </div>
+        <!------billede lagt ind til mobil version--->
         <img
           src="./assets/coconut_tree.53623963.webp"
           alt="Palmetræ illustration"
@@ -559,6 +564,7 @@
         />
       </section>
     </main>
+    <!----------footer-------------->
     <footer class="m-auto mt-spacingxl bg-pink-100 p-16 font-montserrat">
       <div class="m-auto gap-5 md:grid md:grid-cols-3">
         <ul class="m-auto mt-[2rem] leading-7 md:mt-[0]">

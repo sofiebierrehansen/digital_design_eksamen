@@ -22,14 +22,14 @@
     />
 
     <title>Kurv</title>
-    <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.fcd7a2f4.css">
+    <script type="module" crossorigin src="./assets/main.6a6fb72b.js"></script>
+    <link rel="stylesheet" href="./assets/main.376059cc.css">
   </head>
   <body>
     <header>
       <!------Burger menu------->
       <nav
-        class="fixed z-40 w-screen shadow-lg backdrop-blur-lg md:fixed top-0 md:w-full"
+        class="fixed top-0 z-40 w-screen shadow-lg backdrop-blur-lg md:fixed md:w-full"
       >
         <div class="flex shadow-lg lg:hidden">
           <a class="mr-auto" href="index.html">
@@ -115,7 +115,9 @@
               </ul>
             </div>
           </li>
-          <li class="text-right"><a href="kurv.html">Kurv</a></li>
+          <li class="text-right text-green-800">
+            <a href="kurv.html">Kurv</a>
+          </li>
           <li class="mt-4 text-right">
             <a
               class="mr-auto self-center rounded-woltBtnRadius bg-blue-500 py-woltBtnpy px-woltBtnpx font-praise text-text2xl font-normal text-stone-100 shadow-md hover:bg-blue-600"
@@ -229,7 +231,7 @@
               href="kurv.html"
               class="focus:outline-none focus:outline-yellow-500"
               ><svg
-                class="fill-stone-900 hover:fill-green-800"
+                class="fill-green-800 hover:fill-green-800"
                 width="32"
                 height="32"
                 viewBox="0 0 24 24"
@@ -250,8 +252,9 @@
         </ul>
       </nav>
     </header>
+    <!--------Main. Skal være med for at det hele ikke kommer på én side  ------------>
     <main
-      x-data="{ step: 'step1', pris: '200', antal: '6'}"
+      x-data="{ step: 'step1', pris: '200', antal: '1'}"
       class="m-auto max-w-screen-2xl"
     >
       <section class="mb-4 pt-0 lg:m-8 lg:p-8">
@@ -642,6 +645,7 @@
           />
         </section>
       </div>
+      <!---------"Tilføj til kurv" og "gennemfør betaling" knapper. x-on:click sørger for at ved tryk vises næste trin----------------->
       <div class="flex justify-end p-6">
         <button
           id="knap2"
@@ -660,6 +664,7 @@
           Gennemfør betaling
         </button>
       </div>
+      <!-------------Footer---------------------------->
       <footer class="m-auto mt-spacing2xl bg-pink-100 p-16 font-montserrat">
         <div class="m-auto gap-5 md:grid md:grid-cols-3">
           <ul class="m-auto mt-[2rem] leading-7 md:mt-[0]">

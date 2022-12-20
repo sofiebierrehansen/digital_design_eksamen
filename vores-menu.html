@@ -22,10 +22,11 @@
     />
 
     <title>Vores menu</title>
-    <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.fcd7a2f4.css">
+    <script type="module" crossorigin src="./assets/main.6a6fb72b.js"></script>
+    <link rel="stylesheet" href="./assets/main.376059cc.css">
   </head>
   <body>
+    <!----------------Skip to content----------------------->
     <a
       class="absolute top-32 -left-full font-montserrat transition-transform focus:left-8 focus:outline-none focus:outline-green-800"
       href="#main"
@@ -73,7 +74,7 @@
           <li class="mt-8 text-right">
             <a href="index.html">Forside</a>
           </li>
-          <li class="text-right">
+          <li class="text-right text-green-800">
             <a href="vores-menu.html">Vores menu</a>
           </li>
           <li class="text-right"><a href="book-os.html">Book os</a></li>
@@ -146,7 +147,7 @@
                 class="h-[74px] w-[68px] cursor-iscursor object-contain"
             /></a>
           </li>
-          <li class="self-center hover:text-green-800">
+          <li class="self-center text-green-800 hover:text-green-800">
             <a
               href="vores-menu.html"
               class="focus:outline-none focus:outline-yellow-500"
@@ -256,6 +257,7 @@
         </ul>
       </nav>
     </header>
+    <!-----------------Main---------------------------->
     <main id="main" class="m-auto max-w-screen-2xl">
       <section class="bg-orange-100 text-stone-900">
         <h1
@@ -263,6 +265,7 @@
         >
           Vores menu
         </h1>
+        <!----------------Menu oversigt mobil version------------------------>
         <div tabindex="0" class="collapse md:hidden">
           <div class="collapse-title">
             <p class="flex font-luckiestguy text-textxl">
@@ -485,12 +488,15 @@
             </article>
           </div>
         </div>
-        <ul class="mx-10 hidden flex-row gap-5 pb-8 md:flex lg:gap-7">
+        <!-----------------Menu oversigt desktop (med schema markup)----------------------------->
+        <ul
+          class="mx-10 hidden gap-5 pb-8 md:flex md:flex-wrap lg:flex lg:flex-row lg:gap-7"
+        >
           <li>
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-56 flex-col items-start leading-8"
+              class="flex w-56 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -522,7 +528,7 @@
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-48 flex-col items-start leading-8"
+              class="flex w-48 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -559,7 +565,7 @@
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-48 flex-col items-start leading-8"
+              class="flex w-48 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -592,7 +598,7 @@
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-44 flex-col items-start leading-8"
+              class="flex w-44 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -624,7 +630,7 @@
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-56 flex-col items-start leading-8"
+              class="flex w-56 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -650,7 +656,7 @@
             <article
               itemscope
               itemtype="https://schema.org/IceCreamShop"
-              class="flex w-48 flex-col items-start leading-8"
+              class="flex w-48 flex-wrap items-start leading-8 lg:flex lg:flex-col"
             >
               <img
                 itemprop="image"
@@ -688,6 +694,7 @@
           class="sm:hidden"
         />
       </section>
+      <!-----------------Scoops oversigt------------------------------>
       <section
         class="relative mb-56 bg-none bg-[length:500px_500px] bg-right-top bg-no-repeat lg:mx-spacing2xl lg:bg-[url('images/desktop/coconut_tree.webp')]"
       >

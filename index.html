@@ -26,10 +26,12 @@
     />
 
     <title>Nicecream Copenhagen</title>
-    <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.fcd7a2f4.css">
+    <script type="module" crossorigin src="./assets/main.6a6fb72b.js"></script>
+    <link rel="stylesheet" href="./assets/main.376059cc.css">
   </head>
   <body class="overflow-x-hidden">
+    <!-----------------Cookie-box-------------------------->
+
     <div
       id="cookieboks"
       class="fixed left-2 top-20 z-40 w-[370px] overflow-hidden rounded-lgPrimaryBtnRadius border-2 border-stone-100 bg-none bg-right bg-no-repeat drop-shadow-md backdrop-blur-lg sm:left-48 md:left-0 md:top-32 md:w-[800px] md:bg-[url('images/desktop/cookie.webp')] lg:left-[25%]"
@@ -72,6 +74,7 @@
         </button>
       </div>
     </div>
+    <!--------Skip to content--------------->
     <a
       class="absolute top-32 -left-full font-montserrat transition-transform focus:left-8 focus:outline-none focus:outline-green-800"
       href="#main"
@@ -116,7 +119,7 @@
             src="./assets/sprinkels.8c8b3b06.svg"
             alt="Krymmel"
           />
-          <li class="mt-8 text-right">
+          <li class="mt-8 text-right text-green-800">
             <a href="index.html">Forside</a>
           </li>
           <li class="text-right">
@@ -302,19 +305,20 @@
         </ul>
       </nav>
     </header>
+  <!------------Blops og krymmel illustrationer-------------->
     <div>
       <img
-        class="absolute top-2/3 -left-32 -z-10 hidden overflow-y-hidden md:block"
+        class="absolute top-2/3 -left-32 -z-10 hidden overflow-y-hidden lg:block"
         src="./assets/blop_peach1.35a81ee4.svg"
         alt="Orange illustration"
       />
       <img
-        class="absolute -right-0 -top-32 -z-10 hidden overflow-y-hidden md:block"
+        class="absolute -right-0 -top-32 -z-10 hidden overflow-y-hidden lg:block"
         src="./assets/blop_babypink.1048c1d9.svg"
         alt="Baby pink illustration"
       />
       <img
-        class="absolute -right-32 -z-10 hidden md:block"
+        class="absolute -right-32 -z-10 hidden lg:block"
         src="./assets/blop_lightpink.a2554070.svg"
         alt="Lys pink illustration"
       />
@@ -334,6 +338,8 @@
         alt="Krymmel"
       />
     </div>
+    <!----------Main---------->
+    <!------værdier i [] er arbitrary values. De er lagt ind for at få værdier til at passe til prototypen ----------->
     <main
       id="main"
       class="m-auto max-w-screen-2xl bg-[url('images/desktop/icecream-hero.webp')] bg-[length:193px_407px] bg-[left_top_6rem] bg-no-repeat md:bg-[left_8rem_top] lg:bg-left-top xl:bg-[length:596px_1203px]"
@@ -366,7 +372,7 @@
       </section>
       <section class="ml-5 grid place-content-center gap-64 lg:mt-96">
         <article
-          class="relative -z-10 mx-5 mt-0 mb-6 h-[370px] w-[320px] rounded-[34px] bg-green-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-auto md:mr-[244px] lg:mt-0 lg:h-[310px] lg:w-[433px]"
+          class="slideright1 relative -z-10 mx-5 mt-0 mb-6 h-[370px] w-[320px] rounded-[34px] bg-green-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-auto md:mr-[244px] lg:mt-0 lg:h-[310px] lg:w-[433px]"
         >
           <img
             src="./assets/pink_kugler.10f85d19.svg"
@@ -384,7 +390,7 @@
           </p>
         </article>
         <article
-          class="relative -z-10 mx-5 mb-6 h-[370px] w-[320px] rounded-[34px] bg-orange-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-[244px] lg:h-[310px] lg:w-[433px] xl:-mt-44"
+          class="slideleft relative -z-10 mx-5 mb-6 h-[370px] w-[320px] rounded-[34px] bg-orange-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-[244px] lg:h-[310px] lg:w-[433px] xl:-mt-44"
         >
           <img
             src="./assets/gule_kugler.31d794f4.svg"
@@ -409,7 +415,7 @@
             <img src="./assets/tripadvisor.e2086f6e.webp" alt="Tripadvisor" />
           </div>
           <article
-            class="relative -z-10 mx-5 mb-6 h-[370px] w-[320px] rounded-[34px] bg-pink-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-auto md:mr-[244px] lg:h-[310px] lg:w-[433px] xl:-mt-44"
+            class="slideright2 relative -z-10 mx-5 mb-6 h-[370px] w-[320px] rounded-[34px] bg-pink-100 p-8 font-montserrat text-stone-900 shadow-md md:ml-auto md:mr-[244px] lg:h-[310px] lg:w-[433px] xl:-mt-44"
           >
             <img
               src="./assets/orange_kugler.0408393f.svg"
@@ -477,7 +483,7 @@
         </ul>
       </section>
     </main>
-
+<!---------Footer------------->
     <footer class="m-auto mt-spacing2xl bg-pink-100 p-16 font-montserrat">
       <div class="m-auto gap-5 md:grid md:grid-cols-3">
         <ul class="m-auto mt-[2rem] leading-7 md:mt-[0]">

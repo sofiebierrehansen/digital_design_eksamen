@@ -22,8 +22,8 @@
     />
 
     <title>Historien om Nicecream Copenhagen</title>
-    <script type="module" crossorigin src="./assets/main.2f4bf334.js"></script>
-    <link rel="stylesheet" href="./assets/main.fcd7a2f4.css">
+    <script type="module" crossorigin src="./assets/main.6a6fb72b.js"></script>
+    <link rel="stylesheet" href="./assets/main.376059cc.css">
   </head>
   <body class="overflow-x-hidden">
     <header>
@@ -107,7 +107,9 @@
                 tabindex="0"
                 class="dropdown-content w-screen bg-green-100 shadow-lg"
               >
-                <li><a class="p-0" href="find-os.html">Find os</a></li>
+                <li>
+                  <a class="p-0" href="find-os.html">Find os</a>
+                </li>
                 <li>
                   <a class="p-0" href="om-nicecream.html">Bliv forhandler</a>
                 </li>
@@ -250,31 +252,34 @@
         </ul>
       </nav>
     </header>
+    <!---------------Blops og krymmel illustrationer----------------------------->
     <div>
       <img
-        class="absolute top-0 -left-48 -z-10 md:block"
+        class="absolute top-0 -left-48 -z-10 hidden md:block lg:block"
         src="./assets/blop_blue1.7a7885d2.svg"
         alt="Blå illustration"
       />
-      <img
-        class="absolute -right-80 top-[150rem] -z-10 md:top-[60rem] lg:-right-96"
-        src="./assets/blop_yellow1.7405c977.svg"
-        alt="Gul illustration"
-      />
+
       <img
         class="absolute top-[172rem] -left-20 -z-10 sm:hidden lg:top-[108rem] lg:block"
         src="./assets/mange_sprinkle.415e7ae4.svg"
         alt="Illustration af meget krymmel"
       />
     </div>
+    <!----------------Main--------------------------------->
     <main class="max-w-screen-2xl">
       <section
-        class="mx-spacingmd grid md:mt-[247px] lg:mx-4 lg:grid-cols-2 lg:gap-56 lg:p-8"
+        class="mx-spacingmd grid md:mt-[247px] lg:mx-spacing2xl lg:grid-cols-2 lg:gap-20 lg:p-8"
       >
+        <img
+          class="absolute -right-80 top-[150rem] -z-10 hidden md:top-[60rem] lg:-right-96 lg:block"
+          src="./assets/blop_yellow1.7405c977.svg"
+          alt="Gul illustration"
+        />
         <img
           src="./assets/founders.9f3700d2.webp"
           alt="David og Fannar"
-          class="order-last mx-auto p-8 lg:order-first lg:ml-spacing2xl"
+          class="order-last lg:order-first"
         />
         <div>
           <h1
@@ -449,6 +454,7 @@
         />
       </section>
     </main>
+    <!-------------Footer----------------------->
     <footer class="m-auto mt-spacing2xl bg-pink-100 p-16 font-montserrat">
       <div class="m-auto gap-5 md:grid md:grid-cols-3">
         <ul class="m-auto mt-[2rem] leading-7 md:mt-[0]">

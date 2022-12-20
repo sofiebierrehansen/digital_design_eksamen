@@ -250,8 +250,9 @@
         </ul>
       </nav>
     </header>
+    <!--------Main. Skal være med for at det hele ikke kommer på én side  ------------>
     <main
-      x-data="{ step: 'step1', pris: '200', antal: '6'}"
+      x-data="{ step: 'step1', pris: '200', antal: '1'}"
       class="m-auto max-w-screen-2xl"
     >
       <section class="mb-4 pt-0 lg:m-8 lg:p-8">
@@ -642,6 +643,7 @@
           />
         </section>
       </div>
+      <!---------"Tilføj til kurv" og "gennemfør betaling" knapper. x-on:click sørger for at ved tryk vises næste trin----------------->
       <div class="flex justify-end p-6">
         <button
           id="knap2"
@@ -660,6 +662,7 @@
           Gennemfør betaling
         </button>
       </div>
+      <!-------------Footer---------------------------->
       <footer class="m-auto mt-spacing2xl bg-pink-100 p-16 font-montserrat">
         <div class="m-auto gap-5 md:grid md:grid-cols-3">
           <ul class="m-auto mt-[2rem] leading-7 md:mt-[0]">

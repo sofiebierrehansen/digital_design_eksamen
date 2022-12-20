@@ -7,6 +7,8 @@ Alpine.start();
 
 window.addEventListener("load", sidenVises);
 
+//Burgermenu 
+
 function sidenVises() {
   console.log("sidenVises");
   document.querySelector("#topnav1").classList.add("hidden");
@@ -28,6 +30,8 @@ function toggleMenu() {
   }
 }
 
+//cookie-boks. Starter fjernCookieboks funktionen ved tryk på en af knapperne
+
 const acceptCookie = document.querySelector("#accepter");
 const denyCookie = document.querySelector("#afvis");
 const cookieboks = document.querySelector("#cookieboks");
@@ -38,8 +42,11 @@ denyCookie.addEventListener("click", fjernCookieboks);
 function fjernCookieboks() {
   cookieboks.classList.add("hidden");
 
+//det nedre stykke sørger for at hvis cookie-boksen er blevet lukket før dukker den ikke op igen
+
   sessionStorage.setItem("fjernCookieboks", true);
 }
+
 
 if (sessionStorage.getItem("fjernCookieboks")) {
   cookieboks.classList.add("hidden");
@@ -51,7 +58,7 @@ class Login extends HTMLElement {
     super();
     this.attachShadow({
       mode: "open",
-    }); //apparently slots only work with the shadow dom?
+    }); 
   }
   connectedCallback() {
     this.html = `<style>
